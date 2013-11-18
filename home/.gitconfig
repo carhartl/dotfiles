@@ -23,6 +23,7 @@
 	aa = !git add -A && git status
 	d = diff
 	dc = diff --cached
+	ch = checkout
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
 	go = checkout -B
