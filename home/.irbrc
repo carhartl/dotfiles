@@ -22,12 +22,12 @@ class Object
       self.public_methods.sort - Object.new.public_methods
     end
   end
-  
+
   # list methods which aren't in superclass
   def local_methods(obj = self)
     (obj.methods - obj.class.superclass.instance_methods).sort
   end
-  
+
   # print documentation
   #
   #   ri 'Array#pop'
