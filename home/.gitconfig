@@ -54,7 +54,7 @@
 	remotes = remote -v
 	stashes = stash list
 [diff]
-	external = ~/bin/.git-diff
+	external = ~/bin/git-diff
 [push]
 	default = simple
 [rerere]
