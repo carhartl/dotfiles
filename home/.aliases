@@ -26,10 +26,11 @@ alias cl="clear"
 alias cs="clear; git status"
 alias heroes="osascript -e 'tell application \"iTunes\" to play the playlist named \"git push\"'"
 alias ls="ls -a"
-alias backtunes="rsync -av --delete /Volumes/Musik/iTunes /Volumes/Backup"
 alias sp="spring"
 alias todos="grep TODO -r ."
 alias fixmes="grep FIXME -r ."
+alias backtunes="rsync -av --delete /Volumes/Musik/iTunes /Volumes/Backup"
+alias backbooks="rsync -av --delete ~/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks /Volumes/Backup"
 
 # List all files colorized in long format
 alias l="ls -l -G"
