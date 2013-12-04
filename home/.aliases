@@ -1,9 +1,7 @@
-# Easier navigation: .., ..., ...., ....., ~ and -
+# Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
+alias ~="cd ~"
 alias -- -="cd -"
 
 # Shortcuts
@@ -72,6 +70,9 @@ alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && kil
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# Copy my public key to the pasteboard
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to pasteboard.\n'"
 
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
