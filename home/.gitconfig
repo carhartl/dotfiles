@@ -29,9 +29,8 @@
 	up = !git fetch origin && git rebase origin/master
 	fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
 	squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
-	irm = rebase --interactive origin/master
-	ir = rebase --interactive @{u}
-	ira = rebase --interactive --autosquash
+	ri = rebase --interactive --autosquash
+	rim = rebase --interactive origin/master
 	done = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
 	amend = commit --amend
 	fix = commit --amend -C HEAD
