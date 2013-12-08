@@ -14,6 +14,6 @@ symlinked. For example: `~/.dotfiles/vim/vimrc.symlink` gets symlinked to
     
 ## Thanks to…
 
-* [Mathias Bynens][mathiasbynens/dotfiles]
-* [Zach Holman][holman/dotfiles]
-* [Wynn Netherland][pengwynn/dotfiles]
+* [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+* [Zach Holman](https://github.com/holman/dotfiles)
+* [Wynn Netherland](https://github.com/pengwynn/dotfiles)
