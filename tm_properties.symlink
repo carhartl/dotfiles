@@ -1,0 +1,26 @@
+TM_RUBY = "$HOME/.rbenv/shims/ruby"
+
+fontSize = 12
+showInvisibles = true
+spellChecking = true
+showWrapColumn = true
+
+include = "{$include,.gitignore}"
+
+[ text ]
+softWrap   = false
+wrapColumn = 100
+softTabs   = true
+tabSize    = 2
+
+[ text.plain ]
+softWrap   = true
+wrapColumn = "Use Window Frame"
+softTabs   = false
+tabSize    = 4
+
+[ source ]
+softWrap   = false
+wrapColumn = 100
+softTabs   = true
+tabSize    = 2
