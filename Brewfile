@@ -5,6 +5,7 @@ update
 upgrade
 
 # Install other useful binaries
+install ack
 install git
 install watch
 install tree
