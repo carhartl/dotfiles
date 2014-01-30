@@ -2,14 +2,15 @@ require 'rubygems'
 require 'irb'
 require 'irb/completion'
 require 'irb/ext/save-history'
-require 'hirb'
+
+alias e exit
+
+def r; reload!; end
 
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 IRB.conf[:AUTO_INDENT] = true
-
-Hirb.enable
 
 class Object
   def interesting_methods
@@ -43,10 +44,13 @@ class Object
   end
 end
 
-def r
-  reload!
-end
 
-def e
-  exit
+begin
+  # load hirb
+  require 'hirb'
+
+  # start hirb
+  Hirb.enable
+rescue LoadError => err
+  warn "Couldn't load Hirb: #{err}"
 end
