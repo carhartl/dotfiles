@@ -5,8 +5,6 @@ require 'irb/ext/save-history'
 
 alias e exit
 
-def r; reload!; end
-
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 IRB.conf[:PROMPT_MODE] = :SIMPLE
@@ -44,7 +42,6 @@ class Object
   end
 end
 
-
 begin
   # load hirb
   require 'hirb'
@@ -53,4 +50,18 @@ begin
   Hirb.enable
 rescue LoadError => err
   warn "Couldn't load Hirb: #{err}"
+end
+
+def copy(str)
+  IO.popen('pbcopy', 'w') { |f| f << str.to_s }
+end
+
+def paste
+  `pbpaste`
+end
+
+
+# Rails specific
+def r
+  reload!
 end
