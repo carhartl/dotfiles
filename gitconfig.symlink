@@ -11,7 +11,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = mate -w
-	precomposeunicode = true
+	precomposeunicode = false
 [color]
 	ui = auto
 [alias]
