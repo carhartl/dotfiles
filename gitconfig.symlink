@@ -2,8 +2,6 @@
 	path = ~/.gituser
 [user]
 	name = Klaus Hartl
-[mergetool]
-	keepBackup = true
 [credential]
 	helper = osxkeychain
 [branch]
@@ -20,8 +18,9 @@
 	cm = commit -m
 	a = add
 	aa = !git add -A && git status
-	d = diff
-	dc = diff --cached
+	d = difftool
+	dc = difftool --cached
+	changes = difftool --extcmd="chdiff --wait"
 	ch = checkout
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
@@ -53,9 +52,21 @@
 	branches = branch -a
 	remotes = remote -v
 	stashes = stash list
-[diff]
-	external = ~/.dotfiles/bin/git-diff
 [push]
 	default = simple
 [rerere]
 	enabled = 1
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[mergetool]
+	prompt = false
+	keepBackup = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
