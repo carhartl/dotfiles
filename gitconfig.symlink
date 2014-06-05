@@ -22,8 +22,7 @@
 	dc = difftool --cached
 	changes = difftool --extcmd="chdiff --wait"
 	ch = checkout
-	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
+	p = pull
 	go = checkout -B
 	b = branch
 	up = !git fetch origin && git rebase origin/master
