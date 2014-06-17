@@ -2,6 +2,15 @@ function pt() {
 	papertrail -f -d 5 $_ | colortail -g papertrail
 }
 
+# Move to trash, source (with minor tweaks):
+# http://www.anthonysmith.me.uk/2008/01/08/moving-files-to-trash-from-the-mac-command-line/
+function trash() {
+  local path
+  for path in "$@"; do
+    osascript -e "tell application \"Finder\"" -e "delete POSIX file \"${PWD}/$path\"" -e "end tell"
+  done
+}
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$@"
