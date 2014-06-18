@@ -68,6 +68,9 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
+# Clear Apple’s System Logs to improve shell startup speed
+alias emptylogs="sudo rm -rfv /private/var/log/asl/*.asl"
+
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
@@ -85,6 +88,12 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
+
+# Pretty print all paths
+alias path='echo -e ${PATH//:/\\n}'
+
+# Quicklook
+alias ql='qlmanage -p "$@" >& /dev/null'
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
