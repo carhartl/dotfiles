@@ -6,7 +6,7 @@ alias -- -="cd -"
 
 # Shortcuts
 alias dots="cd ~/.dotfiles"
-alias d="cd ~/Documents/Dropbox"
+alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias ws="cd ~/Workspace"
