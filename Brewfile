@@ -18,6 +18,7 @@ install httpie
 install jq
 install cowsay
 install fortune
+install moreutils # https://joeyh.name/code/moreutils/
 
 # Remove outdated versions from the cellar
 cleanup
