@@ -14,6 +14,7 @@ install rbenv-gem-rehash
 install ruby-build
 install node
 install phantomjs
+install httpie
 install jq
 install cowsay
 install fortune
