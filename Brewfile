@@ -19,6 +19,7 @@ install jq
 install cowsay
 install fortune
 install moreutils # https://joeyh.name/code/moreutils/
+install gist
 
 # Remove outdated versions from the cellar
 cleanup
