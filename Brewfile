@@ -15,6 +15,7 @@ install ruby-build
 install node
 install phantomjs
 install httpie
+install wget
 install jq
 install cowsay
 install fortune
