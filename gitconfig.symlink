@@ -8,7 +8,7 @@
 	autosetuprebase = always
 [core]
 	excludesfile = ~/.gitignore
-	editor = mate -w
+	editor = mate -wl1
 	precomposeunicode = true
 [color]
 	ui = auto
