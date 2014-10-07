@@ -38,7 +38,8 @@
 	latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
 	cleanup = remote prune origin
 	comp = !sh -c 'git log $1..$2 --pretty=oneline' -
-	undo = reset --hard HEAD~1
+	undo = reset --soft HEAD~1
+	undoundo = reset --hard HEAD~1
 	unstash = stash pop
 	snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
 	ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
