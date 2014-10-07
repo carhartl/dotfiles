@@ -32,7 +32,7 @@ alias pbsort="pbpaste|sort|pbcopy"
 alias backtunes="rsync -av --delete /Volumes/Musik/iTunes /Volumes/Backup"
 alias backbooks="rsync -av --delete ~/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks /Volumes/Backup"
 alias backnavi="rsync -av --delete ~/Library/Fresh/Backup /Volumes/Backup/maps\ +\ more"
-alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
+alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
 alias h?="history | grep"
 
 # List all files colorized in long format
