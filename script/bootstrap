@@ -135,5 +135,15 @@ then
   fi
 fi
 
+
+# Install npm packages.
+packages=(
+jshint
+trash
+)
+for package in ${packages[@]} ; do
+  npm install $package --global --quiet
+done
+
 echo ''
 echo '  All installed!'
