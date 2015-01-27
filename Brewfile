@@ -21,6 +21,7 @@ install cowsay
 install fortune
 install moreutils # https://joeyh.name/code/moreutils/
 install gist
+install git-extras
 
 # Remove outdated versions from the cellar
 cleanup
