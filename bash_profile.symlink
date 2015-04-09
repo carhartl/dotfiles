@@ -14,4 +14,8 @@ fi
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash  ]; then
 	. `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
+
+# Enable git completion for the g alias
+__git_complete g __git_main
+
 PS1='\h:\W$(__git_ps1 "(%s)") \u\$ '
