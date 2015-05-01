@@ -35,6 +35,7 @@ alias backbooks="rsync -av --delete ~/Library/Containers/com.apple.BKAgentServic
 alias backnavi="rsync -av --delete ~/Library/Fresh/Backup /Volumes/Backup/maps\ +\ more"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
 alias h?="history | grep"
+alias fuck='eval $(thefuck $(fc -ln -1))'
 
 # List all files colorized in long format
 alias l="ls -l -G"
