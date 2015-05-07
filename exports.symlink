@@ -17,8 +17,5 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
 export BUNDLER_EDITOR="mate"
 
-# Connect the docker client to the Docker daemon
-export DOCKER_HOST=tcp://localhost:4243
-
 # Show git branch dirty state in the prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
