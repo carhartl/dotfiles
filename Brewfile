@@ -11,6 +11,7 @@ install git
 install git-extras
 install watch
 install tree
+install ccat
 install rbenv
 install rbenv-gem-rehash
 install ruby-build
