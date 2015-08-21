@@ -1,29 +1,19 @@
-# Make sure we’re using the latest Homebrew
-update
-
-# Upgrade any already-installed formulae
-upgrade
-
-# Install other useful binaries
-install fuck
-install ack
-install git
-install git-extras
-install watch
-install tree
-install ccat
-install rbenv
-install rbenv-gem-rehash
-install ruby-build
-install node
-install phantomjs
-install httpie
-install wget
-install jq
-install cowsay
-install fortune
-install moreutils # https://joeyh.name/code/moreutils/
-install gist
-
-# Remove outdated versions from the cellar
-cleanup
+brew "thefuck"
+brew "ack"
+brew "git"
+brew "git-extras"
+brew "watch"
+brew "tree"
+brew "ccat"
+brew "rbenv"
+brew "rbenv-gem-rehash"
+brew "ruby-build"
+brew "node"
+brew "phantomjs"
+brew "httpie"
+brew "wget"
+brew "jq"
+brew "cowsay"
+brew "fortune"
+brew "moreutils" # https://joeyh.name/code/moreutils/
+brew "gist"
