@@ -1,3 +1,4 @@
+tap "Homebrew/bundle"
 brew "thefuck"
 brew "ack"
 brew "git"
