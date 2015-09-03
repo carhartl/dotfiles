@@ -1,4 +1,5 @@
 tap "Homebrew/bundle"
+brew "tag"
 brew "thefuck"
 brew "ack"
 brew "git"

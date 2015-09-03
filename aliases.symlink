@@ -36,6 +36,7 @@ alias backnavi="rsync -av --delete ~/Library/Fresh/Backup /Volumes/Backup/maps\ 
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
 alias h?="history | grep"
 alias fuck='eval $(thefuck $(fc -ln -1))'
+alias tagged="tag -f \* ."
 
 # List all files colorized in long format
 alias l="ls -l -G"
