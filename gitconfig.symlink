@@ -20,7 +20,6 @@
 	aa = !git add -A && git status
 	d = difftool
 	dc = difftool --cached
-	changes = difftool --extcmd="chdiff --wait"
 	ch = checkout
 	p = pull
 	go = checkout -B
