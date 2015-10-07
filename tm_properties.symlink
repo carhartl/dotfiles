@@ -1,6 +1,7 @@
 TM_RUBY = "$HOME/.rbenv/shims/ruby"
 
-fontSize = 12
+fontName = "Hack";
+fontSize = 15
 showInvisibles = true
 spellChecking = true
 showWrapColumn = true
