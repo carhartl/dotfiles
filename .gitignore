@@ -1,2 +1,8 @@
-ipython.symlink
+ipython.symlink/*
+ipython.symlink/profile_default/*
+ipython.symlink/profile_default/startup/*
+!ipython.symlink/profile_default
 !ipython.symlink/profile_default/ipython_config.py
+!ipython.symlink/profile_default/startup
+!ipython.symlink/profile_default/startup/*.py
+!ipython.symlink/profile_default/startup/*.ipy
