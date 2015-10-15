@@ -1,7 +1,6 @@
 tap "Homebrew/bundle"
 brew "caskroom/cask/brew-cask"
 brew "tag"
-brew "thefuck"
 brew "ack"
 brew "git"
 brew "git-extras"
