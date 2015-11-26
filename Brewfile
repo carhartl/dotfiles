@@ -20,3 +20,4 @@ brew "cowsay"
 brew "fortune"
 brew "moreutils" # https://joeyh.name/code/moreutils/
 brew "gist"
+brew "mdp"
