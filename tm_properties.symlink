@@ -6,7 +6,7 @@ showInvisibles = true
 spellChecking = true
 showWrapColumn = true
 
-include = "{$include,.gitignore}"
+include = "{$include,.gitignore,.dockerignore,.env,.env.example,.elasticbeanstalk,.ebextensions}"
 
 [ text ]
 softWrap   = false
