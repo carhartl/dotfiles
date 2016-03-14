@@ -72,3 +72,5 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[help]
+	autocorrect = 10
