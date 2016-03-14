@@ -20,3 +20,6 @@ brew "fortune"
 brew "moreutils" # https://joeyh.name/code/moreutils/
 brew "gist"
 brew "mdp"
+
+tap "caius/jo"
+brew "jo"
