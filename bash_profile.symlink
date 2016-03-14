@@ -21,3 +21,6 @@ __git_complete g __git_main
 # Heads up display for git
 # https://github.com/michaeldfallen/git-radar
 export PS1="$PS1\$(git-radar --bash --fetch)\n$ "
+
+# autoenv
+source `brew --prefix autoenv`/activate.sh
