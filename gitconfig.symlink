@@ -72,5 +72,6 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+	compactionHeuristic = true
 [help]
 	autocorrect = 10
