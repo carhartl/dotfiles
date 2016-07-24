@@ -26,7 +26,6 @@ alias be="bundle exec"
 alias cl="clear"
 alias cs="clear; git status"
 alias heroes="osascript -e 'tell application \"iTunes\" to play the playlist named \"git push\"'"
-alias sp="spring"
 alias todos="grep TODO -r . --exclude-dir='.git'"
 alias fixmes="grep FIXME -r . --exclude-dir='.git'"
 alias pbsort="pbpaste | sort | pbcopy"
@@ -100,4 +99,3 @@ alias ql='qlmanage -p "$@" >& /dev/null'
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"

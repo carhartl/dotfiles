@@ -15,27 +15,18 @@
 [alias]
 	s = status
 	c = commit
-	cm = commit -m
 	a = add
-	aa = !git add -A && git status
 	d = difftool
 	dc = difftool --cached
 	ch = checkout
 	p = pull
-	go = checkout -B
 	b = branch
-	up = !git fetch origin && git rebase origin/master
 	fixup = !sh -c 'git commit --fixup=$1' -
 	squash = !sh -c 'git commit --squash=$1' -
 	ri = rebase --interactive --autosquash
 	rim = rebase --interactive origin/master
-	done = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
-	amend = commit --amend
-	fix = commit --amend -C HEAD
-	credit = commit --amend --author "$1 <$2>" -C HEAD
 	count = !git shortlog -sn
 	latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
-	cleanup = remote prune origin
 	comp = !sh -c 'git log $1..$2 --pretty=oneline' -
 	undo = reset --soft HEAD~1
 	undoundo = reset --hard HEAD~1
@@ -48,7 +39,6 @@
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 	today = log --since '1 day ago' --oneline --author Klaus
-	mybranches = "!f() { if test $# = 0 ; then set -- refs/remotes ; fi ; git for-each-ref --format='%(authordate:relative)\t%(refname:short)\t%(authoremail)' --sort=authordate \"$@\" | sed -ne \"s/\t<$(git config user.email)>//p\" | column -s '\t' -t ; } ; f"
 	# Show verbose output about tags, branches, remotes or stashes
 	tags = tag -l
 	branches = branch -a
