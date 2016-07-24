@@ -4,6 +4,15 @@
 #
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
+export DOTS=$HOME/.dotfiles
 
-# Upgrade homebrew and Install homebrew packages
-brew bundle $HOME/.dotfiles/Brewfile
+# Install homebrew
+$DOTS/homebrew/install.sh 2>&1
+
+# Upgrade homebrew
+echo "› brew update"
+brew update
+
+# Install software
+echo "› $DOTS/script/install"
+$DOTS/script/install
