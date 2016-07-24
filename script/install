@@ -12,3 +12,7 @@ brew bundle
 
 # Find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+
+# TODO: at some point m is supposed to be available via brew
+# See https://github.com/rgcr/m-cli
+curl -fsSL https://raw.githubusercontent.com/rgcr/m-cli/master/install.sh | sh
