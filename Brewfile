@@ -1,6 +1,6 @@
-tap "Homebrew/bundle"
+tap "caskroom/cask"
+tap "homebrew/bundle"
 
-brew "caskroom/cask/brew-cask"
 brew "tag"
 brew "ack"
 brew "git"
