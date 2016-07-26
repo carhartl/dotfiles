@@ -1,0 +1,4 @@
+# Displays the first and last 5 lines of a data file
+i() {
+  (head -n 5; tail -n 5) < "$1"
+}

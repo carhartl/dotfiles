@@ -1,9 +1,6 @@
+# Local/private config goes in the include
 [include]
-	path = ~/.gituser
-[user]
-	name = Klaus Hartl
-[credential]
-	helper = osxkeychain
+	path = ~/.gitconfig.local
 [branch]
 	autosetuprebase = always
 [core]

@@ -1,11 +1,6 @@
 #!/bin/sh
 #
-# Homebrew
-#
-# This installs some of the common dependencies needed (or at least desired)
-# using Homebrew.
-
-# Check for Homebrew
+# Install homebrew when necessary
 if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
@@ -18,7 +13,6 @@ then
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
   fi
-
 fi
 
 exit 0

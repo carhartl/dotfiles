@@ -1,6 +1,6 @@
 # dotfiles
 
-## Installation ##
+## Installation
 
 - `git clone https://github.com/carhartl/dotfiles.git ~/.dotfiles`
 - `cd ~/.dotfiles`

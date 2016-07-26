@@ -4,10 +4,14 @@
 
 set -e
 
-Echo "Bootstrapping"
+echo "Bootstrapping"
+
+# Install homebrew
+$ZSH/homebrew/install.sh 2>&1
+
+brew update
+
+brew bundle --file=$ZSH/homebrew/Brewfile
 
 script/install
 script/symlinks
-
-# Install packages from Brewfile
-brew bundle

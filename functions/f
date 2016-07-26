@@ -1,0 +1,4 @@
+# find shorthand
+f() {
+  find . -name "$1"
+}
