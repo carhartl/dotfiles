@@ -11,7 +11,3 @@ script/symlinks
 
 # Install packages from Brewfile
 brew bundle
-
-# TODO: at some point m is supposed to be available via brew
-# See https://github.com/rgcr/m-cli
-curl -fsSL https://raw.githubusercontent.com/rgcr/m-cli/master/install.sh | sh
