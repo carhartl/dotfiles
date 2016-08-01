@@ -24,3 +24,5 @@ brew "tag"
 brew "tree"
 brew "watch"
 brew "wget"
+
+cask "docker"
