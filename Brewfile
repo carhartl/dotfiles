@@ -16,6 +16,7 @@ brew "mdp"
 brew "michaeldfallen/formula/git-radar"
 brew "moreutils" # https://joeyh.name/code/moreutils/
 brew "m-cli"
+brew "ngrep"
 brew "node"
 brew "phantomjs"
 brew "rbenv"
