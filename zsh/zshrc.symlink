@@ -43,6 +43,11 @@ unset config_files
 autoload -U url-quote-magic
 zle -N self-insert url-quote-magic
 
+# Fun
+autoload -U tetris
+zle -N tetris
+bindkey ^T tetris
+
 # Make colors available for prompt
 autoload colors && colors
 
