@@ -51,3 +51,9 @@ setopt LOCAL_TRAPS
 # Key bindings
 
 bindkey "^[[3~" delete-char
+
+# Allow editing long commands in editor
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey "^xe" edit-command-line
+bindkey "^x^e" edit-command-line
