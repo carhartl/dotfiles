@@ -52,7 +52,7 @@ bindkey ^T tetris
 autoload colors && colors
 
 # Setup prompt
-export PROMPT=%n@%m:'%{$fg[cyan]%}${PWD/$HOME/~}%{$reset_color%}'"\$(git-radar --zsh --fetch)"$'\n'\$' '
+export PROMPT=%n@%m:'%{$fg[cyan]%}${PWD/$HOME/~}%{$reset_color%}'"\$(git-radar --zsh --fetch)"$'\n%(?.%F{green}.%F{red})\$%{$reset_color%} '
 
 precmd() {
   # Sets the Terminal.app current working directory before the prompt is
