@@ -57,3 +57,10 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey "^xe" edit-command-line
 bindkey "^x^e" edit-command-line
+
+_git-status() {
+   BUFFER=" clear; git status"
+   zle accept-line
+}
+zle -N _git-status
+bindkey '^g' _git-status # ctrl-g => `git status --short`

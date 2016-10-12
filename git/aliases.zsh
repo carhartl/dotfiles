@@ -1,4 +1,3 @@
-alias cs="clear; git status"
 alias g="git"
 alias ga="git add"
 alias gc="git commit"
