@@ -16,6 +16,9 @@ SAVEHIST=10000
 # Options...
 # See http://zsh.sourceforge.net/Doc/Release/Options.html
 
+# Changing Directories
+setopt AUTO_CD
+
 # Completion
 setopt COMPLETE_ALIASES
 setopt COMPLETE_IN_WORD
