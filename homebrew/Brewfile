@@ -28,5 +28,6 @@ brew "tree"
 brew "watch"
 brew "wget"
 brew "zsh"
+brew "zsh-syntax-highlighting"
 
 cask "docker"
