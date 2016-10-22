@@ -51,6 +51,10 @@ setopt LOCAL_OPTIONS
 setopt LOCAL_TRAPS
 
 
+# Do menu-driven completion
+zstyle ':completion:*' menu select
+
+
 # Key bindings
 
 bindkey "^[[3~" delete-char
