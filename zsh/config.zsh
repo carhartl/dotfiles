@@ -71,3 +71,11 @@ _git-status() {
 }
 zle -N _git-status
 bindkey '^g' _git-status # ctrl-g => `git status --short`
+
+# Bind history to up down keys
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
