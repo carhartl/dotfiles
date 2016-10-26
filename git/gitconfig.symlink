@@ -20,7 +20,7 @@
 	b = branch
 	fixup = !sh -c 'git commit --fixup=$1' -
 	squash = !sh -c 'git commit --squash=$1' -
-	ri = rebase --interactive --autosquash
+	ri = rebase --interactive
 	rim = rebase --interactive origin/master
 	count = !git shortlog -sn
 	latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
@@ -45,6 +45,8 @@
 	stashes = stash list
 [push]
 	default = simple
+[rebase]
+	autosquash = true
 [rerere]
 	enabled = 1
 [mergetool "Kaleidoscope"]
