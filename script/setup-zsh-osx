@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+# TODO: add to readme: `$ sudo ./script/setup-zsh-osx` if sticking with this?
+# Usage: sudo setup-zsh
+if [ "/usr/local/bin/zsh" != $SHELL ]; then
+  dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+fi
