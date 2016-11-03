@@ -1,0 +1,4 @@
+syntax on
+
+filetype indent plugin on
+autocmd Filetype gitcommit setlocal spell textwidth=72
