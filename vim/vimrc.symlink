@@ -1,4 +1,4 @@
 syntax on
 
+" Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
-autocmd Filetype gitcommit setlocal spell textwidth=72
