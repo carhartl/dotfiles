@@ -1,4 +1,6 @@
 syntax on
 
+set backspace=2
+
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
