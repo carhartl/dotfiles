@@ -5,7 +5,7 @@
 	autosetuprebase = always
 [core]
 	excludesfile = ~/.gitignore
-	editor = mate -wl1
+	editor = vim
 	precomposeunicode = true
 [color]
 	ui = auto
