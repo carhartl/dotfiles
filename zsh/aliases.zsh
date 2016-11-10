@@ -4,6 +4,10 @@ alias ...="cd ../.."
 alias ~="cd ~"
 alias -- -="cd -"
 
+# Ignore in history
+alias cd=" cd"
+alias ls=" ls"
+
 # Shortcuts
 alias reload!=". ~/.zshrc"
 alias dots="cd ~/.dotfiles"
