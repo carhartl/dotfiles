@@ -5,7 +5,7 @@ export PATH="./bin:/usr/local/bin:/usr/local/sbin:$ZSH/bin:$PATH"
 # Your project folder that we can `c [tab]` to
 export PROJECTS=~/Workspace
 
-export EDITOR="mate -w"
+export EDITOR="vim"
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
