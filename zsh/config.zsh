@@ -66,7 +66,10 @@ bindkey "^xe" edit-command-line
 bindkey "^x^e" edit-command-line
 
 _git-status() {
-   BUFFER=" clear; git status"
+   clear
+   git status
+   zle push-input
+   BUFFER=""
    zle accept-line
 }
 zle -N _git-status
