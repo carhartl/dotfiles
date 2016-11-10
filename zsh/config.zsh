@@ -65,15 +65,14 @@ zle -N edit-command-line
 bindkey "^xe" edit-command-line
 bindkey "^x^e" edit-command-line
 
+# ctrl-g => git status on blank screen, whithout adding to history...
 _git-status() {
    clear
    git status
-   zle push-input
-   BUFFER=""
-   zle accept-line
+   zle redisplay
 }
 zle -N _git-status
-bindkey '^g' _git-status # ctrl-g => `git status --short`
+bindkey '^g' _git-status
 
 # Bind history to up down keys
 autoload -U up-line-or-beginning-search
