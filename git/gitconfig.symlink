@@ -27,6 +27,7 @@
 	comp = !sh -c 'git log $1..$2 --pretty=oneline' -
 	undo = reset --soft HEAD~1
 	undoundo = reset --hard HEAD~1
+	wip = stash --keep-index --include-untracked
 	unstash = stash pop
 	tfo = !git checkout -- . && git clean -fd
 	yolo = push --force
