@@ -57,6 +57,8 @@ zstyle ':completion:*' menu select
 
 # Key bindings
 
+bindkey -e
+
 bindkey "^[[3~" delete-char
 
 # Allow editing long commands in editor
