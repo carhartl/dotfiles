@@ -67,7 +67,7 @@ zle -N edit-command-line
 bindkey "^xe" edit-command-line
 bindkey "^x^e" edit-command-line
 
-# ctrl-g => git status on blank screen, whithout adding to history...
+# ctrl-g => git status on blank screen, whithout adding to history
 _git-status() {
    clear
    git status
@@ -75,6 +75,14 @@ _git-status() {
 }
 zle -N _git-status
 bindkey '^g' _git-status
+
+# Move to where the arguments belong
+_after-first-word() {
+  zle beginning-of-line
+  zle forward-word
+}
+zle -N _after-first-word
+bindkey "^x^a" _after-first-word
 
 # Bind history to up down keys
 autoload -U up-line-or-beginning-search
