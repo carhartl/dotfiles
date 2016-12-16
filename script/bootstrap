@@ -7,11 +7,11 @@ set -e
 echo "Bootstrapping"
 
 # Install homebrew
-$ZSH/homebrew/install.sh 2>&1
+$DOTFILES/homebrew/install.sh 2>&1
 
 brew update
 
-brew bundle --file=$ZSH/homebrew/Brewfile
+brew bundle --file=$DOTFILES/homebrew/Brewfile
 
 script/install
 script/symlinks

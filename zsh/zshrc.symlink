@@ -1,6 +1,6 @@
-# Shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:$ZSH/bin:$PATH"
+# Shortcut to this dotfiles path is $DOTFILES
+export DOTFILES=$HOME/.dotfiles
+export PATH="./bin:/usr/local/bin:/usr/local/sbin:$DOTFILES/bin:$PATH"
 
 # Your project folder that we can `c [tab]` to
 export PROJECTS=~/Workspace
@@ -9,7 +9,7 @@ export EDITOR="vim"
 
 # All of our zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($DOTFILES/**/*.zsh)
 
 # Load everything but the completion files
 for file in ${config_files:#*/completion.zsh}; do
