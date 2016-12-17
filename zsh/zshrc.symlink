@@ -1,8 +1,6 @@
 # Interactive environment configs
 setopt NULLGLOB EXTENDEDGLOB
 
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:$DOTFILES/bin:$PATH"
-
 # All of our non-path/env/profile/login/logout zsh files
 typeset -U interactive_files completion_files
 interactive_files=($DOTFILES/**/*.zsh~**/*completion.zsh~**/*path.zsh~**/*env.zsh~**/*profile.zsh~**/*login.zsh~**/*logout.zsh)
