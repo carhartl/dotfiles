@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 #
-# Run all installers and symlink dotfiles
+# Install packages, run all installers and symlink dotfiles.
 
 set -e
 
 echo "Bootstrapping"
 
-# Install homebrew
+# First of all install homebrew
 $DOTFILES/homebrew/install.sh 2>&1
 
 brew update
 
-brew bundle --file=$DOTFILES/homebrew/Brewfile
-
+script/pkg
 script/install
 script/symlinks

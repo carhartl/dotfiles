@@ -38,8 +38,8 @@ alias l="ls -1A"
 # Lists human readable sizes, hidden files
 alias ll="ls -lAh"
 
-# Update Homebrew, installed Ruby gems, npm, and their installed packages
-alias update="brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; gem update --system; gem update;"
+# Update all the things
+alias update="brew update; brew upgrade; brew cleanup; yarn global upgrade; gem update --system; gem update;"
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
