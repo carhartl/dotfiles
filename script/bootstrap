@@ -8,7 +8,7 @@ echo "Bootstrapping"
 
 # First of all install homebrew
 $DOTFILES/homebrew/install.sh 2>&1
-
+ln -sf $DOTFILES/homebrew/Brewfile ~/.Brewfile
 brew update
 
 script/pkg

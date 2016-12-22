@@ -5,7 +5,7 @@
 set -e
 
 # Homebrew
-brew bundle --file="$DOTFILES/homebrew/Brewfile"
+brew bundle --global
 
 # Node
 cat $DOTFILES/node/Yarnfile | xargs yarn global add
