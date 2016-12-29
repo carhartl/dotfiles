@@ -65,9 +65,3 @@ preexec() {
 }
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# autoenv
-local autoenv_dir="/usr/local/opt/autoenv"
-if [[ -e $autoenv_dir/activate.sh ]]; then
-  source $autoenv_dir/activate.sh
-fi
