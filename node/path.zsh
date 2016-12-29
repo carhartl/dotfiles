@@ -1,1 +1,2 @@
-export PATH="$PATH:`yarn global bin`"
+# NOTE: `yarn global bin` slowing down shell startup time too much...
+export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
