@@ -24,6 +24,9 @@ alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Sim
 alias h\?="history | grep"
 alias tagged="tag -f \* ."
 
+# When you forget to use 'sudo', just do 'redo' to rerun the last command using sudo.
+alias redo='sudo $(fc -ln -1)'
+
 # Lists the ten most used commands
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 
