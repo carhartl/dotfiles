@@ -46,12 +46,17 @@ bindkey ^T tetris
 autoload colors && colors
 
 # Setup prompt
-export PROMPT=%n@%m:'%{$fg[cyan]%}${PWD/$HOME/~}%{$reset_color%}'"\$(git-radar --zsh --fetch)"$'\n%(?.\xe2\x9a\xa1\xef\xb8\x8f.\xf0\x9f\x92\xa9 ) '
+export PROMPT=$'%(?.\xe2\x9a\xa1\xef\xb8\x8f.\xf0\x9f\x92\xa9) '
 
 precmd() {
   # Sets the Terminal.app current working directory before the prompt is
   # displayed (for when opening a new tab).
   printf '\e]7;%s\a' "file://${HOST}${PWD// /%20}"
+
+  # Instead of setting up prompt with a newline: setup elobarote information before prompt in here
+  # to prevent redraw issues when text in prompt becomes too long...
+  # http://superuser.com/questions/382503/how-can-i-put-a-newline-in-my-zsh-prompt-without-causing-terminal-redraw-issues
+  print -rP '%n@%m:%{$fg[cyan]%}${PWD/$HOME/~}%{$reset_color%}'"\$(git-radar --zsh --fetch)"
 }
 
 preexec() {
