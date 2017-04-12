@@ -37,6 +37,7 @@
 	# View abbreviated SHA, description, and history graph of the latest 10 commits
 	l = log --pretty=oneline -n 10 --graph --abbrev-commit
 	today = log --since '1 day ago' --oneline --author Klaus
+	last = log -n 1
 	# Pretty branch status
 	pbs = log --all --graph --decorate --oneline --simplify-by-decoration
 	# Show verbose output about tags, branches, remotes or stashes
