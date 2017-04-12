@@ -34,8 +34,8 @@
 	snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
 	ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
 	theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
-	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	# View abbreviated SHA, description, and history graph of the latest 10 commits
+	l = log --pretty=oneline -n 10 --graph --abbrev-commit
 	today = log --since '1 day ago' --oneline --author Klaus
 	# Pretty branch status
 	pbs = log --all --graph --decorate --oneline --simplify-by-decoration
