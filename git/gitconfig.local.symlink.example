@@ -3,3 +3,5 @@
 	email = AUTHOREMAIL
 [credential]
 	helper = GIT_CREDENTIAL_HELPER
+[includeIf "gitdir:~/work/"]
+	path = "~/.gitconfig-work"
