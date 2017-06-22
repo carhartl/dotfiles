@@ -15,3 +15,5 @@ Icon
 # Editor project files
 *.tm_properties
 *.chproj
+
+*.orig
