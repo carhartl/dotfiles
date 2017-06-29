@@ -1,0 +1,4 @@
+#!/bin/sh
+
+git difftool $1
+osascript ~/.termtile/center-kaleidoscope.scp
