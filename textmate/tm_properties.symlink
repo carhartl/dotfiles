@@ -28,3 +28,6 @@ softWrap   = false
 wrapColumn = 100
 softTabs   = true
 tabSize    = 2
+
+[ Procfile ]
+fileType = source.yaml
