@@ -21,7 +21,6 @@ alias backtunes="rsync -av --delete /Volumes/Musik/iTunes /Volumes/Backup"
 alias backbooks="rsync -av --delete ~/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks /Volumes/Backup"
 alias backnavi="rsync -av --delete ~/Library/Fresh/Backup /Volumes/Backup/maps\ +\ more"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
-alias h\?="history | grep"
 alias tagged="tag -f \* ."
 
 # When you forget to use 'sudo', just do 'redo' to rerun the last command using sudo.
