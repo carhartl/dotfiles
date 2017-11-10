@@ -20,8 +20,7 @@
 	b = branch
 	fixup = !sh -c 'git commit --fixup=$1' -
 	squash = !sh -c 'git commit --squash=$1' -
-	ri = rebase --interactive
-	rim = rebase --interactive origin/master
+	brushup = rebase -i @{u}
 	count = !git shortlog -sn
 	latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
 	comp = !sh -c 'git log $1..$2 --pretty=oneline' -
