@@ -18,6 +18,8 @@
 	ch = checkout
 	p = pull
 	b = branch
+	amend = commit --amend
+	fix = commit --amend -C HEAD
 	fixup = !sh -c 'git commit --fixup=$1' -
 	squash = !sh -c 'git commit --squash=$1' -
 	brushup = rebase -i @{u}
