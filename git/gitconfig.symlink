@@ -24,8 +24,6 @@
 	squash = !sh -c 'git commit --squash=$1' -
 	brushup = rebase -i @{u}
 	count = !git shortlog -sn
-	latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
-	comp = !sh -c 'git log $1..$2 --pretty=oneline' -
 	undo = reset --soft HEAD~1
 	undoundo = reset --hard HEAD~1
 	unstage = reset HEAD --
@@ -37,12 +35,12 @@
 	snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
 	ours = "!f() { git checkout --ours $@ && git add $@; }; f"
 	theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
-	# View abbreviated SHA, description, and history graph of the latest 10 commits
-	l = log --pretty=oneline -n 10 --graph --abbrev-commit
-	today = log --since '1 day ago' --oneline --author Klaus
+	l = log --oneline -n 10 --graph --abbrev-commit
+	today = !sh -c 'git log --since midnight --oneline --author $(git config user.email)'
+	standup = !sh -c 'git log --since yesterday --oneline --author $(git config user.email)'
 	last = log -n 1
-	# Pretty branch status
-	pbs = log --all --graph --decorate --oneline --simplify-by-decoration
+	comp = !sh -c 'git log $1..$2 --oneline --abbrev-commit' -
+	latest = for-each-ref --sort -committerdate --format='%(committerdate:short) %(refname:short)'
 	# Show verbose output about tags, branches, remotes or stashes
 	tags = tag -l
 	branches = branch -a
