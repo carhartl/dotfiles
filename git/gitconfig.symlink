@@ -39,6 +39,7 @@
 	today = !sh -c 'git log --since midnight --oneline --author $(git config user.email)'
 	standup = !sh -c 'git log --since yesterday --oneline --author $(git config user.email)'
 	last = log -n 1
+	outgoing = log @{push}.. --oneline --no-decorate --cherry-mark
 	comp = !sh -c 'git log $1..$2 --oneline --abbrev-commit' -
 	latest = for-each-ref --sort -committerdate --format='%(committerdate:short) %(refname:short)'
 	# Show verbose output about tags, branches, remotes or stashes
