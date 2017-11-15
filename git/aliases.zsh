@@ -1,4 +1,5 @@
 alias ga="git add"
+alias gb="git checkout -b"
 alias gc="git commit"
 alias gd="git diff-kaleidoscope"
 alias gdc="git diff-kaleidoscope --cached"

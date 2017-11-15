@@ -16,8 +16,8 @@
 	d = difftool
 	dc = difftool --cached
 	ch = checkout
+	b = checkout -b
 	p = pull
-	b = branch
 	amend = commit --amend
 	fix = commit --amend -C HEAD
 	fixup = !sh -c 'git commit --fixup=$1' -
