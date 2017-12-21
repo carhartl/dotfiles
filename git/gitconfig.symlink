@@ -22,7 +22,7 @@
 	fix = commit --amend -C HEAD
 	fixup = !sh -c 'git commit --fixup=$1' -
 	squash = !sh -c 'git commit --squash=$1' -
-	brushup = rebase -i @{u}
+	brushup = rebase -i master
 	trash = branch -D
 	count = !git shortlog -sn
 	undo = reset --soft HEAD~1
