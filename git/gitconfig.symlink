@@ -30,7 +30,7 @@
 	unstage = reset HEAD --
 	wip = stash --keep-index --include-untracked
 	resume = "!$EDITOR $(git ls-files -m)"
-	unstash = stash pop
+	unstash = stash pop --index
 	tfo = !git checkout -- . && git clean -fd
 	yolo = push --force
 	snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
