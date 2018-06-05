@@ -2,13 +2,16 @@
 #
 # Install packages, run all installers and symlink dotfiles.
 
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd -P)
+
 set -e
 
 echo "Bootstrapping"
 
 # First of all install homebrew
-$DOTFILES/homebrew/install.sh 2>&1
-ln -sf $DOTFILES/homebrew/Brewfile ~/.Brewfile
+$DOTFILES_ROOT/homebrew/install.sh 2>&1
+ln -sf $DOTFILES_ROOT/homebrew/Brewfile ~/.Brewfile
 brew update
 
 script/pkg
