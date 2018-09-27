@@ -74,3 +74,5 @@
 	compactionHeuristic = true
 [help]
 	autocorrect = 10
+[user]
+	useConfigOnly = true
