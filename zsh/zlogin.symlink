@@ -5,7 +5,7 @@ setopt NULLGLOB
 
 # All of our login zsh files
 typeset -U login_files
-login_files=($DOTFILES/**/login.zsh)
+login_files=($DOTFILES/*/login.zsh)
 
 # Run all login files
 for file in ${login_files}; do
