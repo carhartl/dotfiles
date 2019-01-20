@@ -3,7 +3,6 @@ tap "homebrew/bundle"
 tap "michaeldfallen/formula"
 
 brew "ack"
-brew "autoenv"
 brew "ccat"
 brew "cloc"
 brew "cowsay"
