@@ -44,3 +44,6 @@ brew "zsh"
 brew "zsh-syntax-highlighting"
 
 cask "docker"
+cask "keybase"
+cask "textmate"
+cask "visual-studio-code"
