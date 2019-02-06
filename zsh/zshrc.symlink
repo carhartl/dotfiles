@@ -13,8 +13,12 @@ for file in ${interactive_files}; do
 done
 
 # Initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
 
 # Load every completion after autocomplete loads
 for file in ${completion_files}; do
