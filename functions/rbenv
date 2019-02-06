@@ -1,0 +1,2 @@
+eval "$(command rbenv init -)"
+rbenv "$@"
