@@ -1,6 +1,5 @@
 tap "caius/jo"
 tap "homebrew/bundle"
-tap "michaeldfallen/formula"
 
 brew "ack"
 brew "ccat"
@@ -18,7 +17,6 @@ brew "jid"
 brew "jo"
 brew "jq"
 brew "mdp"
-brew "michaeldfallen/formula/git-radar"
 brew "moreutils" # https://joeyh.name/code/moreutils/
 brew "m-cli"
 brew "ngrep"

@@ -50,28 +50,8 @@ bindkey ^T tetris
 autoload colors && colors
 
 # Setup prompt
-export PROMPT=$'%{%(?.%F{green}.%F{red})%}➜%{%f%} '
-
-precmd() {
-  # Sets the Terminal.app current working directory before the prompt is
-  # displayed (for when opening a new tab).
-  printf '\e]7;%s\a' "file://${HOST}${PWD// /%20}"
-
-  # Instead of setting up prompt with a newline: setup elobarote information before prompt in here
-  # to prevent redraw issues when text in prompt becomes too long...
-  # http://superuser.com/questions/382503/how-can-i-put-a-newline-in-my-zsh-prompt-without-causing-terminal-redraw-issues
-  print -rP '%n@%m:%{$fg[cyan]%}${PWD/$HOME/~}%{$reset_color%}'"\$(git-radar --zsh --fetch)"
-}
-
-preexec() {
-  # Unsets the Terminal.app current working directory when a terminal
-  # multiplexer or remote connection is started since it can no longer be
-  # updated, and it becomes confusing when the directory displayed in the title
-  # bar is no longer synchronized with real current working directory.
-  if [[ "${2[(w)1]:t}" == (screen|tmux|dvtm|ssh|mosh) ]]; then
-    print '\e]7;\a'
-  fi
-}
+autoload -U promptinit; promptinit
+prompt pure
 
 source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "/usr/local/etc/profile.d/z.sh"
