@@ -39,6 +39,7 @@ brew "yarn"
 brew "ykman"
 brew "z"
 brew "zsh"
+brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 cask "docker"
