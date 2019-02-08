@@ -31,7 +31,7 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
-setopt INC_APPEND_HISTORY # TODO: alias/keybinding for `fc -RI`?! => http://zsh.sourceforge.net/Doc/Release/Options.html#History
+setopt INC_APPEND_HISTORY
 
 # Input/Output
 setopt CORRECT

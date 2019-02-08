@@ -6,6 +6,7 @@ alias -- -="cd -"
 
 # Shortcuts
 alias reload!=". ~/.zshrc"
+alias pullhist="fc -RI"
 alias dots="cd ~/.dotfiles"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
