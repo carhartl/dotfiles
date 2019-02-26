@@ -44,7 +44,7 @@ zle -N self-insert url-quote-magic
 # Fun
 autoload -U tetris
 zle -N tetris
-bindkey ^T tetris
+bindkey '^[T' tetris # Escape, Shift + T
 
 # Make colors available for prompt
 autoload colors && colors
