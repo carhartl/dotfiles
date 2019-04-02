@@ -1,8 +1,6 @@
 # Local/private config goes in the include
 [include]
 	path = ~/.gitconfig.local
-[branch]
-	autosetuprebase = always
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
@@ -51,6 +49,8 @@
 	branches = branch -a
 	remotes = remote -v
 	stashes = stash list
+[pull]
+	rebase = true
 [push]
 	default = simple
 [rebase]
