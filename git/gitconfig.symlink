@@ -55,6 +55,7 @@
 	default = simple
 [rebase]
 	autosquash = true
+	autoStash = true
 [rerere]
 	enabled = 1
 [mergetool "Kaleidoscope"]
