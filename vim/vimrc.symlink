@@ -5,3 +5,7 @@ set number
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+
+" Disable modeline as a security precaution
+set modelines=0
+set nomodeline
