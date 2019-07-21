@@ -1,7 +1,6 @@
 tap "caius/jo"
 tap "homebrew/bundle"
 
-brew "ack"
 brew "ccat"
 brew "cloc"
 brew "cowsay"
