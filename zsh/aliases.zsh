@@ -25,6 +25,9 @@ alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Sim
 alias tagged="tag -f \* ."
 alias x="chmod +x $(ls -tr | tail -1)"
 
+# Serve files from current directory
+alias serve="python -m SimpleHTTPServer"
+
 # When you forget to use 'sudo', just do 'redo' to rerun the last command using sudo.
 alias redo='sudo $(fc -ln -1)'
 
