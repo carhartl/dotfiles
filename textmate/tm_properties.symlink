@@ -1,4 +1,4 @@
-TM_RUBY = "$HOME/.rbenv/shims/ruby"
+TM_RUBY = "$HOME/.asdf/shims/ruby"
 
 fontName = "Menlo";
 fontSize = 15
