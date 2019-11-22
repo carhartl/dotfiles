@@ -1,5 +1,20 @@
 #!/usr/bin/env zsh
 
+# Login configs
+setopt NULLGLOB
+
+# All of our login zsh files
+typeset -U login_files
+login_files=($DOTFILES/*/login.zsh)
+
+# Run all login files
+for file in ${login_files}; do
+  source "$file"
+done
+
+unset login_files
+unsetopt NULLGLOB
+
 # Execute code in the background to not affect the current session
 {
   # Compile zcompdump, if modified, to increase startup speed
