@@ -3,7 +3,6 @@
 # Install desired npm packages
 packages=(
 git-unsaved
-mdncomp
 pure-prompt
 trash-cli
 )
