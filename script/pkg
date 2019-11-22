@@ -9,6 +9,3 @@ set -e
 
 # Homebrew
 brew bundle --global
-
-# Node
-cat $DOTFILES_ROOT/node/Yarnfile | xargs yarn global add
