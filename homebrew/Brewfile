@@ -23,6 +23,7 @@ brew "mdp"
 brew "moreutils" # https://joeyh.name/code/moreutils/
 brew "m-cli"
 brew "ngrep"
+brew "node"
 brew "ripgrep"
 brew "shellcheck"
 brew "tag"
