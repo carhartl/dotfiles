@@ -1,4 +1,3 @@
-alias d="docker \$*"
 alias dc="docker-compose \$*"
 # Stop containers
 alias ds="docker stop \$(docker ps -a -q)"
