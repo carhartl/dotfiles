@@ -1,4 +1,4 @@
-alias dc="docker-compose \$*"
+alias dc="docker-compose"
 # Stop containers
 alias ds="docker stop \$(docker ps -a -q)"
 # Remove stopped containers
