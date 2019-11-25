@@ -21,7 +21,6 @@ alias pbsort="pbpaste | sort | pbcopy"
 alias backtunes="rsync -av --delete /Volumes/Musik/iTunes /Volumes/Backup"
 alias backbooks="rsync -av --delete ~/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks /Volumes/Backup"
 alias backnavi="rsync -av --delete ~/Library/Fresh/Backup /Volumes/Backup/maps\ +\ more"
-alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
 alias tagged="tag -f \* ."
 alias x="chmod +x $(ls -tr | tail -1)"
 
