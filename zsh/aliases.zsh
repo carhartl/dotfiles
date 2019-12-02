@@ -40,7 +40,7 @@ alias l="ls -1A"
 alias ll="ls -lAh"
 
 # Update all the things
-alias update="brew update; brew upgrade; gem update --system; gem update; pip install --upgrade pip; npm update -g npm; npm update -g"
+alias update="echo '\e[32m==>\e[0m Homebrew...'; brew update; brew upgrade; echo '\e[32m==>\e[0m Ruby...'; gem update --system; gem update; echo '\e[32m==>\e[0m Python...';  pip install --upgrade pip; echo '\e[32m==>\e[0m Nodejs...'; npm update -g npm; npm update -g"
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
