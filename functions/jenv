@@ -1,5 +1,0 @@
-# Rehash manually, since we end up in an endless loop 
-# otherwise...
-eval "$(command jenv init - --no-rehash)"
-jenv rehash
-jenv "$@"
