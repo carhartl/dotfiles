@@ -24,6 +24,16 @@ alias backnavi="rsync -av --delete ~/Library/Fresh/Backup /Volumes/Backup/maps\ 
 alias tagged="tag -f \* ."
 alias x="chmod +x $(ls -tr | tail -1)"
 
+# Suffix aliases
+alias -s css=code
+alias -s html=code
+alias -s js=code
+alias -s md=code
+alias -s mjs=code
+alias -s py=code
+alias -s rb=code
+alias -s tf=code
+
 # Serve files from current directory
 alias serve="python -m SimpleHTTPServer"
 
