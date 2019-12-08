@@ -35,7 +35,7 @@ alias -s rb=code
 alias -s tf=code
 
 # Serve files from current directory
-alias serve="python -m SimpleHTTPServer"
+alias serve="python -m http.server"
 
 # When you forget to use 'sudo', just do 'redo' to rerun the last command using sudo.
 alias redo='sudo $(fc -ln -1)'
