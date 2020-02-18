@@ -50,6 +50,7 @@ bindkey '^[T' tetris # Escape, Shift + T
 autoload colors && colors
 
 # Setup prompt
+zstyle ":prompt:pure:git:stash" show yes
 autoload -U promptinit; promptinit
 prompt pure
 
