@@ -1,4 +1,3 @@
-tap "caius/jo"
 tap "homebrew/bundle"
 
 brew "asdf"
