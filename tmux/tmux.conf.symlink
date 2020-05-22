@@ -5,3 +5,11 @@ bind-key C-a send-prefix
 
 # Start window numbering at 1
 set -g base-index 1
+
+# Enable mouse mode
+set -g mouse on
+
+# When creating new windows or splitting panes retain current directory
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}"
