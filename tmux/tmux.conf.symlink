@@ -17,3 +17,9 @@ bind c new-window -c "#{pane_current_path}"
 # macOS system clipboard
 bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "pbcopy"
 bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcopy"
+
+# Navigation
+bind-key -n M-Left select-window -p
+bind-key -n M-Right select-window -n
+bind-key -n M-, select-window -p
+bind-key -n M-. select-window -n
