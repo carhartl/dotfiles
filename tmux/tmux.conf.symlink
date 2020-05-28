@@ -23,3 +23,6 @@ bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pb
 # Navigation
 bind -n S-Left previous-window
 bind -n S-Right next-window
+
+# Rename window
+bind-key -n M-r command-prompt -I "" "rename-window '%%'"
