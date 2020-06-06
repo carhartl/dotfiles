@@ -1,4 +1,5 @@
 set -g default-terminal "screen-256color"
+set -g history-limit 10000
 
 # Remap prefix from 'C-b' to 'C-a'
 unbind C-b
