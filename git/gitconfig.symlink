@@ -57,7 +57,7 @@
 	autosquash = true
 	autoStash = true
 [rerere]
-	enabled = 1
+	enabled = true
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustexitcode = true
