@@ -36,6 +36,7 @@ brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
+cask "chrysalis"
 cask "docker"
 cask "keybase"
 cask "slate"
