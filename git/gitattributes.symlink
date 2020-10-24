@@ -1,0 +1,4 @@
+*.go diff=golang
+*.java diff=java
+*.py diff=python
+*.rb diff=ruby
