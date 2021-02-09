@@ -5,7 +5,7 @@
     $ git clone https://github.com/carhartl/dotfiles.git ~/.dotfiles
     $ cd ~/.dotfiles
     $ ./script/bootstrap
-    $ sudo ./script/setup-zsh-osx
+    $ sudo ./script/setup-zsh-macos
 
 The install script will symlink the appropriate files in `.dotfiles` to your
 home directory. Everything is configured and tweaked within `~/.dotfiles`,
