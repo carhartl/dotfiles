@@ -8,7 +8,7 @@ export LC_ALL='en_US.UTF-8';
 # Shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
 
-export PATH="$DOTFILES/bin:$PATH"
+export PATH="/usr/local/sbin:$DOTFILES/bin:$PATH"
 
 # Project folder that we can `c [tab]` to
 export PROJECTS=~/Workspace
