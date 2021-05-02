@@ -51,6 +51,8 @@ autoload colors && colors
 
 # Setup prompt
 zstyle ":prompt:pure:git:stash" show yes
+# Pure manually installed until https://github.com/sindresorhus/pure/issues/584 is solved..
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
