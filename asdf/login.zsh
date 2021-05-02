@@ -1,1 +1,1 @@
-. /usr/local/opt/asdf/asdf.sh
+. /opt/homebrew/opt/asdf/asdf.sh

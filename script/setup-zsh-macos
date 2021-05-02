@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
 # Usage: sudo ./setup-zsh-macos
-if [ "/usr/local/bin/zsh" != $SHELL ]; then
-  dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+if [ "/opt/homebrew/opt/zsh/bin/zsh" != $SHELL ]; then
+  dscl . -create /Users/$USER UserShell /opt/homebrew/opt/zsh/bin/zsh
 fi

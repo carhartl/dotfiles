@@ -54,6 +54,6 @@ zstyle ":prompt:pure:git:stash" show yes
 autoload -U promptinit; promptinit
 prompt pure
 
-source "/usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "/usr/local/etc/profile.d/z.sh"
+source "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "/opt/homebrew/etc/profile.d/z.sh"

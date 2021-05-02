@@ -12,6 +12,7 @@ echo "Bootstrapping"
 # First of all install homebrew
 $DOTFILES_ROOT/homebrew/install.sh 2>&1
 ln -sf $DOTFILES_ROOT/homebrew/Brewfile ~/.Brewfile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew update
 
 script/pkg
