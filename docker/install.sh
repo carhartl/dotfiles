@@ -2,5 +2,7 @@
 #
 # Activate completion for Docker commands
 etc=/Applications/Docker.app/Contents/Resources/etc
-ln -s $etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
-ln -s $etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
+target=~/.zsh/completion
+mkdir -p $target
+ln -sf $etc/docker.zsh-completion $target/_docker
+ln -sf $etc/docker-compose.zsh-completion $target/_docker-compose
