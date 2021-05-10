@@ -38,7 +38,7 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 cask "alfred"
-# cask "appdelete" # failing due to non https...
+cask "appcleaner"
 cask "google-chrome"
 cask "chrysalis"
 cask "docker"
