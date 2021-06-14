@@ -34,4 +34,5 @@ set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 set -g @continuum-restore 'on'
 
+set-environment -g PATH "/opt/homebrew/bin:/usr/local/bin:/bin:/usr/bin"
 run -b '~/.tmux/plugins/tpm/tpm'
