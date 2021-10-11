@@ -1,3 +1,5 @@
+set -g default-command "${SHELL}"
+
 # Remap prefix from 'C-b' to 'C-a'
 unbind C-b
 set-option -g prefix C-a
@@ -34,5 +36,4 @@ set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 set -g @continuum-restore 'on'
 
-set-environment -g PATH "/opt/homebrew/bin:/usr/local/bin:/bin:/usr/bin"
 run -b '~/.tmux/plugins/tpm/tpm'
