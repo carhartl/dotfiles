@@ -74,7 +74,7 @@ alias urldecode='python3 -c "import sys, urllib.parse as ul; print(ul.unquote_pl
 alias badge="tput bel"
 
 # Pretty print all paths
-alias path="echo -e ${PATH//:/\\n}"
+alias path='echo -e ${PATH//:/\\n}'
 
 # Quicklook
 alias ql='qlmanage -p "$@" >& /dev/null'
