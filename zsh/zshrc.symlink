@@ -63,4 +63,4 @@ source "/opt/homebrew/etc/profile.d/z.sh"
 # say version of node - configured via asdf - is in place and
 # not the one from homebrew)!
 eval "$(/opt/homebrew/bin/brew shellenv)"
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+source "/opt/homebrew/opt/asdf/libexec/asdf.sh"
