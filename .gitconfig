@@ -4,8 +4,8 @@
 [init]
 	defaultBranch = main
 [core]
-	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
+	excludesfile = ~/.gitignore_global
+	attributesfile = ~/.gitattributes_global
 	editor = vim
 	precomposeunicode = true
 [color]

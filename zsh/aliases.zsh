@@ -34,6 +34,9 @@ alias -s py=code
 alias -s rb=code
 alias -s tf=code
 
+# Manage dotfiles
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 # Serve files from current directory
 alias serve="python -m http.server"
 

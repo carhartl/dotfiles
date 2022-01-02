@@ -1,20 +1,18 @@
 #!/usr/bin/env bash
-#
-# Install packages, run all installers and symlink dotfiles.
-
-cd "$(dirname "$0")/.."
-DOTFILES_ROOT=$(pwd -P)
 
 set -e
 
 echo "Bootstrapping"
 
+cd "$(dirname "$0")/.."
+
 # First of all install homebrew
-"$DOTFILES_ROOT"/homebrew/install.sh 2>&1
-ln -sf "$DOTFILES_ROOT"/homebrew/Brewfile ~/.Brewfile
+./setup/homebrew.sh 2>&1
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew update
 
-script/pkg
-script/install
-script/symlinks
+# Install global homebrew packages
+brew bundle --global
+
+# Find installers and run them iteratively
+find ./setup -iname "*.sh" | while read -r installer ; do sh -c "${installer}" ; done

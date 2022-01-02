@@ -1,13 +1,11 @@
 # Interactive environment configs
 setopt NULLGLOB EXTENDEDGLOB
 
-# All of our non-path/env/login/logout zsh files
 typeset -U interactive_files completion_files
-interactive_files=($DOTFILES/*/*.zsh~*/completion.zsh~*/path.zsh~*/env.zsh~*/login.zsh~*/logout.zsh)
+interactive_files=($DOTFILES/*/*.zsh~*/completion.zsh)
 completion_files=($DOTFILES/*/completion.zsh)
 
-# Load interactive files (everything but the completion, path, env,
-# login, and logout files)
+# Load interactive files (everything but the completion)
 for file in ${interactive_files}; do
   source "$file"
 done
@@ -20,7 +18,7 @@ else
   compinit -C
 fi
 
-# Load every completion after autocomplete loads
+# Load completion after autocomplete loads
 for file in ${completion_files}; do
   source "$file"
 done
