@@ -2,7 +2,7 @@
 
 set -e
 
-echo "==> Bootstrapping"
+echo "Bootstrapping dotfiles..."
 
 # Clone bare repo
 git clone --bare https://github.com/carhartl/dotfiles.git "$HOME/.dotfiles.git"
@@ -13,11 +13,11 @@ config checkout
 config config status.showUntrackedFiles no
 
 # Install Homebrew when necessary
-if test ! "$(which brew)"
-then
+if test ! "$(which brew)"; then
   echo "==> Installing Homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew update
@@ -26,4 +26,4 @@ brew update
 brew bundle --global
 
 # Find installers and run them iteratively
-find ./install -iname "*.sh" | while read -r installer ; do sh -c "${installer}" ; done
+find ./install -iname "*.sh" | while read -r installer; do sh -c "${installer}"; done
