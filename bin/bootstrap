@@ -10,6 +10,7 @@ function config {
    /usr/bin/git --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" "$@"
 }
 config checkout
+config submodule update --init --recursive
 config config status.showUntrackedFiles no
 
 # Install Homebrew when necessary
