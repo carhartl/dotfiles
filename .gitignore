@@ -1,6 +1,6 @@
-.dotfiles
+.dotfiles.git
 
-git/.gitconfig.local
+.gitconfig.local
 
 .ipython/*
 .ipython/profile_default/*
