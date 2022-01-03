@@ -1,0 +1,3 @@
+[submodule ".vim/pack/bundle/start/vim-grammarous"]
+	path = .vim/pack/bundle/start/vim-grammarous
+	url = https://github.com/rhysd/vim-grammarous.git
