@@ -26,4 +26,4 @@ brew update
 brew bundle --global
 
 # Find installers and run them iteratively
-find ./setup -iname "*.sh" | while read -r installer ; do sh -c "${installer}" ; done
+find ./install -iname "*.sh" | while read -r installer ; do sh -c "${installer}" ; done
