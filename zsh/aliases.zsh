@@ -7,7 +7,6 @@ alias -- -="cd -"
 # Shortcuts
 alias reload!=". ~/.zshrc"
 alias rehist="fc -RI"
-alias dots="cd ~/Workspace/dotfiles"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias ws="cd ~/Workspace"
@@ -34,8 +33,6 @@ alias -s py=code
 alias -s rb=code
 alias -s tf=code
 
-# Manage dotfiles
-alias dot="$(which git) --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 
 # Serve files from current directory
 alias serve="python -m http.server"
