@@ -25,7 +25,7 @@ cp .gitconfig.local{.example,}
 Setup macOS to use up-to-date homebrew zsh:
 
 ```bash
-sudo ./script/setup-zsh-macos
+sudo ./bin/setup-zsh-macos
 ```
 
 ## Inspired by and thanks to…
