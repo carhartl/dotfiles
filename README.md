@@ -1,16 +1,29 @@
 # dotfiles
 
-## Installation
+## Requirements
+
+- Git
+- Curl
+
+## Install
 
 ```bash
-git clone --bare https://github.com/carhartl/dotfiles.git $HOME/.dotfiles
-function config {
-   /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
-}
-config checkout
-config config status.showUntrackedFiles no
-cd $HOME/.dotfiles
-./script/bootstrap
+curl -Lks https://raw.githubusercontent.com/carhartl/dotfiles/master/bin/bootstrap | /bin/bash
+```
+
+## Optional
+
+Add local git configuration:
+
+```bash
+cp .gitconfig.local{.example,}
+```
+
+^ Adapt the placeholders!
+
+Setup macOS to use up-to-date homebrew zsh:
+
+```bash
 sudo ./script/setup-zsh-macos
 ```
 
