@@ -8,6 +8,7 @@
 ## Install
 
 ```bash
+curl -Lks https://git.io/JSg3X | /bin/bash
 curl -Lks https://raw.githubusercontent.com/carhartl/dotfiles/master/bin/bootstrap | /bin/bash
 ```
 
