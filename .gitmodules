@@ -1,3 +1,6 @@
 [submodule ".vim/pack/bundle/start/vim-grammarous"]
 	path = .vim/pack/bundle/start/vim-grammarous
-	url = https://github.com/rhysd/vim-grammarous.git
+	url = https://github.com/rhysd/vim-grammarous
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
