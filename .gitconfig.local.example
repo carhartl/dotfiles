@@ -1,7 +1,12 @@
 [user]
-	name = AUTHORNAME
-	email = AUTHOREMAIL
+	name = NAME
+	email = EMAIL
+	signingKey = SIGNING_KEY
 [credential]
-	helper = GIT_CREDENTIAL_HELPER
+	helper = osxkeychain
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
 [includeIf "gitdir:~/work/"]
 	path = "~/.gitconfig-work"
