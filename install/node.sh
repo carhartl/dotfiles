@@ -1,8 +1,8 @@
 #!/bin/sh
 #
 # Install desired npm packages
-npm install git-unsaved --global --quiet
-npm install prettier-plugin-properties --global --quiet
-npm install prettier-plugin-sh --global --quiet
-npm install prettier --global --quiet
-npm install trash-cli --global --quiet
+npm install git-unsaved --location=global --quiet
+npm install prettier-plugin-properties --location=global --quiet
+npm install prettier-plugin-sh --location=global --quiet
+npm install prettier --location=global --quiet
+npm install trash-cli --location=global --quiet
