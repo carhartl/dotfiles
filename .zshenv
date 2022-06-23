@@ -10,3 +10,6 @@ export PROJECTS=~/Workspace
 
 # Use vim
 export EDITOR=vim
+
+# Better ripgrep config
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
