@@ -1,6 +1,7 @@
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
+# Docker completions to be found in $HOME/.zsh/completion
 fpath=($DOTFILES/zsh/functions $HOME/.zsh/completion $fpath)
 autoload -U $DOTFILES/zsh/functions/*(:t)
 
