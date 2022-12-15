@@ -3,7 +3,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export DOTFILES="$HOME"
-export PATH="$DOTFILES/bin:$PATH"
+export PATH="$DOTFILES/bin:/opt/homebrew/opt/curl/bin:$PATH"
 
 # Project folder that we can `c [tab]` to
 export PROJECTS=~/Workspace

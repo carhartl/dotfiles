@@ -4,6 +4,7 @@ brew "cloc"
 brew "cowsay"
 brew "csvkit"
 brew "ctop"
+brew "curl" # More recent than the one that comes with macOS Monterey!
 brew "fd"
 brew "fortune"
 brew "gist"
