@@ -22,6 +22,7 @@ brew "jo"
 brew "jq"
 brew "kube-score"
 brew "kubectx"
+brew "lefthook"
 brew "mdp"
 brew "moreutils" # https://joeyh.name/code/moreutils/
 brew "m-cli"
