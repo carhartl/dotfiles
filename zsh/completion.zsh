@@ -10,3 +10,4 @@ zstyle ':completion:*' use-cache on
 compdef g=git
 compdef d=docker
 compdef dots=git
+source <(kubectl completion zsh)
