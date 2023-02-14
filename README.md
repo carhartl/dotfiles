@@ -21,12 +21,6 @@ cp .gitconfig.local{.example,}
 
 ^ Adapt the placeholders!
 
-Setup macOS to use up-to-date homebrew zsh:
-
-```bash
-sudo ./bin/setup-zsh-macos
-```
-
 ## Inspired by and thanks to…
 
 - [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
