@@ -3,12 +3,13 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export DOTFILES="$HOME"
+
 export PATH="$DOTFILES/bin:/opt/homebrew/opt/curl/bin:$PATH"
 
 export GPG_TTY=$(tty)
 
 # Project folder that we can `c [tab]` to
-export PROJECTS=~/Workspace
+export PROJECTS="$HOME/Workspace"
 
 # Use vim
 export EDITOR=vim

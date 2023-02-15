@@ -33,7 +33,6 @@ alias -s py=code
 alias -s rb=code
 alias -s tf=code
 
-
 # Serve files from current directory
 alias serve="python -m http.server"
 
