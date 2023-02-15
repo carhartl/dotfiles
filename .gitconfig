@@ -56,6 +56,10 @@
 	rebase = true
 [push]
 	default = simple
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
 [rebase]
 	autosquash = true
 	autoStash = true
@@ -79,4 +83,6 @@
 [help]
 	autocorrect = 10
 [user]
+	name = Klaus Hartl
 	useConfigOnly = true
+	signingKey = 6BA8AED91AB6EA2A

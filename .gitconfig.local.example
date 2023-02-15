@@ -1,11 +1,9 @@
 [user]
-	name = NAME
-	email = EMAIL
+	# Intentionally omitting email, relying on `useConfigOnly = true`
 	signingKey = SIGNING_KEY
 [credential]
+	# Not necessary when exclusively using git via ssh
 	helper = osxkeychain
-[commit]
-	gpgsign = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
 [includeIf "gitdir:~/work/"]
