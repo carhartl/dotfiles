@@ -19,6 +19,12 @@ Add local git configuration:
 cp .gitconfig.local{.example,}
 ```
 
+To add additonal, local-only configuration:
+
+```bash
+cp .localrc{.example,}
+```
+
 ^ Adapt the placeholders!
 
 ## Inspired by and thanks to…
