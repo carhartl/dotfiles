@@ -6,6 +6,7 @@ brew "csvkit"
 brew "ctop"
 brew "curl" # More recent than the one that comes with macOS Monterey!
 brew "fd"
+brew "fzf"
 brew "fortune"
 brew "gist"
 brew "git"

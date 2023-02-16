@@ -62,3 +62,4 @@ source "/opt/homebrew/etc/profile.d/z.sh"
 # not the one from homebrew)!
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source "/opt/homebrew/opt/asdf/libexec/asdf.sh"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
