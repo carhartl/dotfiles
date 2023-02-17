@@ -50,6 +50,7 @@ brew "z"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "1password-cli"
 
 cask "alfred"
 cask "appcleaner"

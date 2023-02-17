@@ -63,3 +63,4 @@ source "/opt/homebrew/etc/profile.d/z.sh"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source "/opt/homebrew/opt/asdf/libexec/asdf.sh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /Users/klaus/.config/op/plugins.sh
