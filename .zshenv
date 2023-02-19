@@ -2,9 +2,7 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export DOTFILES="$HOME"
-
-export PATH="$DOTFILES/bin:/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="$HOME/bin:/opt/homebrew/opt/curl/bin:$PATH"
 
 export GPG_TTY=$(tty)
 

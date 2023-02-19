@@ -1,8 +1,8 @@
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-fpath=($DOTFILES/zsh/functions $fpath)
-autoload -U $DOTFILES/zsh/functions/*(:t)
+fpath=($HOME/zsh/functions $fpath)
+autoload -U $HOME/zsh/functions/*(:t)
 
 
 # Variables
