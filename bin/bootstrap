@@ -29,8 +29,5 @@ brew bundle --global
 # Find installers and run them iteratively
 find ./install -iname "*.sh" | while read -r installer; do sh -c "${installer}"; done
 
-if [ "/opt/homebrew/bin/zsh" != "$SHELL" ]; then
-  echo "Setting up Homebrew zsh..."
-  sudo dscl . -create /Users/"$USER" UserShell /opt/homebrew/bin/zsh
-  echo "Log out for changes to take effect!"
-fi
+# Set up macOS
+sudo ./bin/macos
