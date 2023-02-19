@@ -11,7 +11,11 @@ if [ "/opt/homebrew/bin/zsh" != "$SHELL" ]; then
   echo "Log out for changes to take effect!"
 fi
 
-osascript <<EOD
+# Set fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+osascript << EOD
 tell application "Terminal"
     local allOpenedWindows
     local initialOpenedWindows
