@@ -2,6 +2,8 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+export CLICOLOR=true
+
 export PATH="$HOME/bin:/opt/homebrew/opt/curl/bin:$PATH"
 
 export GPG_TTY=$(tty)

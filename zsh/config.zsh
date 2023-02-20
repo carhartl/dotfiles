@@ -1,5 +1,3 @@
-export CLICOLOR=true
-
 fpath=($HOME/zsh/functions $fpath)
 autoload -U $HOME/zsh/functions/*(:t)
 
