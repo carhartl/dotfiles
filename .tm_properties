@@ -1,12 +1,10 @@
-TM_RUBY = "$HOME/.asdf/shims/ruby"
-
 fontName = "Menlo";
 fontSize = 15
 showInvisibles = true
 spellChecking = true
 showWrapColumn = true
 
-include = "{$include,.gitignore,.dockerignore,.env,.env.example,.elasticbeanstalk,.ebextensions,.travis.yml}"
+include = "{$include,.gitignore,.dockerignore,.env,.env.example}"
 
 [ text ]
 softWrap   = false
