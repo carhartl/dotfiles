@@ -56,11 +56,7 @@ source "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "/opt/homebrew/etc/profile.d/z.sh"
 
-# Order is important here, so that asdf's shims come before
-# the executables provided by homebrew (so that the expected
-# say version of node - configured via asdf - is in place and
-# not the one from homebrew)!
 eval "$(/opt/homebrew/bin/brew shellenv)"
-source "/opt/homebrew/opt/asdf/libexec/asdf.sh"
+eval "$(rtx activate zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /Users/klaus/.config/op/plugins.sh
