@@ -6,5 +6,6 @@ rtx global kubectl@1.25.5
 rtx global nodejs@system
 rtx install python@3.9.4
 rtx global python@3.9.4
+export RUBY_CONFIGURE_OPTS=--with-libyaml-dir=/opt/homebrew/opt/libyaml
 rtx install ruby@3.2.1
 rtx global ruby@3.2.1
