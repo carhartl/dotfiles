@@ -59,4 +59,4 @@ source "/opt/homebrew/etc/profile.d/z.sh"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(rtx activate zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /Users/klaus/.config/op/plugins.sh
+source "/Users/$USER/.config/op/plugins.sh"
