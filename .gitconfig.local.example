@@ -1,6 +1,8 @@
 [user]
-	# Intentionally omitting email, relying on `useConfigOnly = true`
-	signingKey = SIGNING_KEY
+	# Intentionally omitting email in this section, relying on `useConfigOnly = true`
+
+	# Default signing key, but can change
+	signingKey = 6BA8AED91AB6EA2A
 [credential]
 	# Not necessary when exclusively using git via ssh
 	helper = osxkeychain
