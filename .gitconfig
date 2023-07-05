@@ -4,10 +4,10 @@
 [init]
 	defaultBranch = main
 [core]
-	excludesfile = ~/.gitignore_global
-	attributesfile = ~/.gitattributes_global
+	excludesFile = ~/.gitignore_global
+	attributesFile = ~/.gitattributes_global
 	editor = vim
-	precomposeunicode = true
+	precomposeUnicode = true
 [color]
 	ui = auto
 [alias]
@@ -57,17 +57,17 @@
 [push]
 	default = simple
 [commit]
-	gpgsign = true
+	gpgSign = true
 [tag]
 	gpgSign = true
 [rebase]
-	autosquash = true
+	autoSquash = true
 	autoStash = true
 [rerere]
 	enabled = true
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
+	trustExitCode = true
 [mergetool]
 	prompt = false
 	keepBackup = true
@@ -81,7 +81,7 @@
 	tool = Kaleidoscope
 	compactionHeuristic = true
 [help]
-	autocorrect = 10
+	autoCorrect = 10
 [user]
 	name = Klaus Hartl
 	useConfigOnly = true
