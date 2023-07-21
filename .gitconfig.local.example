@@ -8,5 +8,8 @@
 	helper = osxkeychain
 [gpg]
 	program = /opt/homebrew/bin/gpg
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	allowedSignersFile = ~/.ssh/allowed_signers
 [includeIf "gitdir:**/work/**"]
 	path = ~/work/.gitconfig.local
