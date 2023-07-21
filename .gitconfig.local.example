@@ -8,5 +8,5 @@
 	helper = osxkeychain
 [gpg]
 	program = /opt/homebrew/bin/gpg
-[includeIf "gitdir:~/work/"]
-	path = "~/.gitconfig-work"
+[includeIf "gitdir:**/work/**"]
+	path = ~/work/.gitconfig.local
