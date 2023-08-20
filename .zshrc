@@ -61,6 +61,6 @@ source "/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "/opt/homebrew/etc/profile.d/z.sh"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(rtx activate zsh)"
+[ -v DEVBOX_SHELL_ENABLED ] || eval "$(rtx activate zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source "/Users/$USER/.config/op/plugins.sh"
