@@ -12,10 +12,14 @@ done
 
 # Initialize autocomplete here, otherwise functions won't be loaded
 autoload -Uz compinit
-if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+if [[ -v DEVBOX_SHELL_ENABLED ]]; then
   compinit
 else
-  compinit -C
+  if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+    compinit
+  else
+    compinit -C
+  fi
 fi
 
 # Load completion after autocomplete loads
