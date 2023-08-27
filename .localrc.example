@@ -1,3 +1,5 @@
+export PET_GITHUB_ACCESS_TOKEN=
+
 alias mk=minikube
 alias sk=skaffold
 alias tf=terraform
