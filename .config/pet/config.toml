@@ -11,7 +11,7 @@
   access_token = ""
   gist_id = "af1d4d89c6dce544802e38e8537f6ae9"
   public = false
-  auto_sync = false
+  auto_sync = true
 
 [GitLab]
   file_name = "pet-snippet.toml"
