@@ -4,7 +4,6 @@
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule ".vim/pack/plugins/start/conventional"]
-	path = .vim/pack/plugins/start/conventional
-	url = https://github.com/carhartl/conventional.vim
-	branch = always-present-completion
+[submodule ".vim/pack/plugins/start/vim-conventional-commits"]
+	path = .vim/pack/plugins/start/vim-conventional-commits
+	url = https://github.com/carhartl/vim-conventional-commits.git
