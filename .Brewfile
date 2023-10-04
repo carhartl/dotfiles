@@ -8,6 +8,7 @@ brew "ctop"
 brew "curl" # More recent than the one that comes with macOS Monterey!
 brew "direnv"
 brew "fd"
+brew "fx"
 brew "fzf"
 brew "fortune"
 brew "gist"
