@@ -3,6 +3,7 @@ brew "chart-testing"
 brew "cloc"
 brew "cosign"
 brew "cowsay"
+brew "crane"
 brew "csvkit"
 brew "ctop"
 brew "curl" # More recent than the one that comes with macOS Monterey!
