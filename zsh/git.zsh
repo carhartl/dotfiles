@@ -8,7 +8,11 @@ alias gp="git pull"
 alias gs="git status --short"
 
 function g {
-  if [[ $# > 0 ]]; then
+  if [[ "$*" == "root" ]]; then
+    local root
+    root="$(git rev-parse --show-toplevel)" || return $?
+    cd "$root" || return $?
+  elif [[ $# > 0 ]]; then
     git "$@"
   else
     echo "Last commit: $(_time_since_last_commit) ago"
