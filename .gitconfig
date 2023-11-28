@@ -45,7 +45,7 @@
 	incoming = log ..@{u} --oneline --no-decorate --cherry-mark
 	ahead = log origin/main..HEAD --oneline --no-decorate --cherry-mark
 	behind = log HEAD..origin/main --oneline --no-decorate --cherry-mark
-	comp = !sh -c 'git log $1..$2 --oneline --abbrev-commit' -
+	comp = !sh -c 'git log --oneline $1..$2' -
 	latest = for-each-ref --sort -committerdate --format='%(committerdate:short) %(refname:short)'
 	# Show verbose output about tags, branches, remotes or stashes
 	tags = tag -l
