@@ -2,7 +2,7 @@
 dots() {
   cd "$HOME" || exit
   if [[ $# > 0 ]]; then
-    g --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" "$@"
+    git --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" "$@"
   else
     git --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" status --short --branch
   fi
