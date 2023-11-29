@@ -171,6 +171,34 @@
 	YXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2JqZWN0CBEaJCkyN0lMUVNXXWRs
 	eYCMjpCVoKmxtAAAAAAAAAEBAAAAAAAAABkAAAAAAAAAAAAAAAAAAAC9
 	</data>
+	<key>ShowActiveProcessArgumentsInTabTitle</key>
+	<false/>
+	<key>ShowActiveProcessArgumentsInTitle</key>
+	<false/>
+	<key>ShowActiveProcessInTabTitle</key>
+	<false/>
+	<key>ShowActiveProcessInTitle</key>
+	<false/>
+	<key>ShowCommandKeyInTitle</key>
+	<true/>
+	<key>ShowComponentsWhenTabHasCustomTitle</key>
+	<false/>
+	<key>ShowDimensionsInTitle</key>
+	<false/>
+	<key>ShowRepresentedURLInTabTitle</key>
+	<false/>
+	<key>ShowRepresentedURLInTitle</key>
+	<false/>
+	<key>ShowRepresentedURLPathInTabTitle</key>
+	<false/>
+	<key>ShowRepresentedURLPathInTitle</key>
+	<false/>
+	<key>ShowShellCommandInTitle</key>
+	<false/>
+	<key>ShowTTYNameInTabTitle</key>
+	<false/>
+	<key>ShowTTYNameInTitle</key>
+	<false/>
 	<key>ShowWindowSettingsNameInTitle</key>
 	<false/>
 	<key>TextBoldColor</key>
@@ -196,7 +224,7 @@
 	<key>VisualBellOnlyWhenMuted</key>
 	<false/>
 	<key>WindowTitle</key>
-	<string>dots / zsh</string>
+	<string></string>
 	<key>columnCount</key>
 	<integer>122</integer>
 	<key>name</key>
