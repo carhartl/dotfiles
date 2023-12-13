@@ -22,6 +22,7 @@ alias backbooks="rsync -av --delete ~/Library/Containers/com.apple.BKAgentServic
 alias backnavi="rsync -av --delete ~/Library/Fresh/Backup /Volumes/Backup/maps\ +\ more"
 alias tagged="tag -f \* ."
 alias x="chmod +x $(ls -tr | tail -1)"
+alias jq=jaq
 
 # Suffix aliases
 alias -s css=code
