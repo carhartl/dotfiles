@@ -63,4 +63,4 @@ source "/opt/homebrew/etc/profile.d/z.sh"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 [ -v DEVBOX_SHELL_ENABLED ] || eval "$(/opt/homebrew/bin/mise activate zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source ~/.config/op/plugins.sh
+[ -f ~/.config/op/plugins.sh ] && source ~/.config/op/plugins.sh
