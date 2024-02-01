@@ -6,6 +6,7 @@ brew "crane"
 brew "csvkit"
 brew "ctop"
 brew "curl" # More recent than the one that comes with macOS Monterey!
+brew "dive"
 brew "fd"
 brew "fortune"
 brew "fx"
