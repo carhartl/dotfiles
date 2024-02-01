@@ -12,15 +12,13 @@ done
 
 # Initialize autocomplete here, otherwise functions won't be loaded
 autoload -Uz compinit
-if [[ -v DEVBOX_SHELL_ENABLED ]]; then
+
+# Only parse dumpfile if it's 24 hours since it was last opened,
+# improves shell startup
+for dump in ~/.zcompdump(N.mh+24); do
   compinit
-else
-  if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
-    compinit
-  else
-    compinit -C
-  fi
-fi
+done
+compinit -C
 
 # Load completion after autocomplete loads
 for file in ${completion_files}; do
