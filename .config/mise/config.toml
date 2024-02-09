@@ -1,5 +1,0 @@
-[tools]
-node = "lts"
-kubectl = "system"
-python = "3.9.4"
-ruby = "3.2.1"
