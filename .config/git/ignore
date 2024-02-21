@@ -26,3 +26,5 @@ tmtags
 *.code-workspace
 
 *.orig
+
+*lefthook-local.yaml
