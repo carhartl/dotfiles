@@ -27,4 +27,4 @@ tmtags
 
 *.orig
 
-*lefthook-local.yaml
+*lefthook-local.y*ml
