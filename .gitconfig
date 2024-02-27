@@ -70,6 +70,7 @@
 	prompt = false
 	keepBackup = true
 [merge]
+	conflictStyle = zdiff3
 	tool = Kaleidoscope
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
