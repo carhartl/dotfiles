@@ -67,8 +67,8 @@
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
 [mergetool]
-	prompt = false
 	keepBackup = true
+	prompt = false
 [merge]
 	conflictStyle = zdiff3
 	tool = Kaleidoscope
