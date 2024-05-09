@@ -11,5 +11,5 @@ compdef g=git
 compdef d=docker
 compdef dots=git
 # kubectl setup is required when not installing kubectl via brew
-source <(kubectl completion zsh)
+# source <(kubectl completion zsh)
 compdef k=kubectl
