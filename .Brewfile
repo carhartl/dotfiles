@@ -1,7 +1,6 @@
 brew "ccat"
 brew "chart-testing"
 brew "cosign"
-brew "cowsay"
 brew "crane"
 brew "csvkit"
 brew "ctop"
