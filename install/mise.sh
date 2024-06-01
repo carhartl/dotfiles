@@ -7,3 +7,5 @@ mise install python
 mise use -g python
 mise install ruby
 mise use -g ruby
+mise install terraform
+mise use -g terraform
