@@ -45,7 +45,6 @@ brew "moreutils" # https://joeyh.name/code/moreutils/
 brew "m-cli"
 brew "ngrep"
 brew "node"
-brew "pipx"
 brew "pure"
 brew "ripgrep"
 brew "rustup"
