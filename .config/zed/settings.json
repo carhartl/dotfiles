@@ -1,0 +1,38 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `zed: Open Default Settings` command
+// from the command palette
+{
+  // TODO: enable ligatures
+  "buffer_font_family": "Monaspace Neon",
+  "buffer_font_size": 16,
+  "file_types": {
+    "Dockerfile": ["Dockerfile*"]
+  },
+  "indent_guides": {
+    "coloring": "indent_aware"
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "scrollbar": {
+    "show": "system"
+  },
+  "show_whitespaces": "boundary",
+  "show_wrap_guides": false,
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Night Owl Dark",
+    "dark": "One Dark"
+  },
+  "ui_font_size": 16,
+  "wrap_guides": [120]
+}
