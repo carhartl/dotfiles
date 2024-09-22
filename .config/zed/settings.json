@@ -29,9 +29,9 @@
     "git_status": true
   },
   "theme": {
-    "mode": "system",
-    "light": "Night Owl Dark",
-    "dark": "One Dark"
+    "dark": "Night Owl No Italics",
+    "light": "Night Owl Light No Italics",
+    "mode": "system"
   },
   "ui_font_size": 16,
   "wrap_guides": [120]
