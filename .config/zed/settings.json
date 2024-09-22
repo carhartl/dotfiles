@@ -7,8 +7,19 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
-  // TODO: enable ligatures
   "buffer_font_family": "Monaspace Neon",
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true
+  },
   "buffer_font_size": 16,
   "file_types": {
     "Dockerfile": ["Dockerfile*"]
