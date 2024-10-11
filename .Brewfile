@@ -44,6 +44,8 @@ brew "mise"
 brew "moreutils" # https://joeyh.name/code/moreutils/
 brew "m-cli"
 brew "ngrep"
+tap "nao1215/tap"
+brew "nao1215/tap/gup"
 brew "node"
 brew "pug"
 brew "pure"
