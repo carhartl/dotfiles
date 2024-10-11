@@ -1,0 +1,6 @@
+[tools]
+kubectl = "system"
+node = "lts"
+python = "latest"
+ruby = "latest"
+terraform = "latest"
