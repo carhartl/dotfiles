@@ -4,3 +4,6 @@ node = "lts"
 python = "latest"
 ruby = "latest"
 terraform = "latest"
+
+[settings]
+pipx_uvx = true
