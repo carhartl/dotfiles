@@ -2,4 +2,4 @@
 # Usage: prune-dirs <path>...
 # Remove empty directories under and including <path>s.
 
-find "$@" -type d -empty -depth | xargs rmdir
+find "$@" -type d -empty -depth -print0 | xargs -0 rmdir

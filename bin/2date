@@ -2,4 +2,4 @@
 # encoding: utf-8
 
 seconds = STDIN.gets.chomp || ARGV.shift
-puts Time.at(seconds.to_i)
+puts Time.at(seconds.to_i) # TODO: as utc!
