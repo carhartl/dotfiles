@@ -1,0 +1,29 @@
+---
+skip_output:
+  - meta # Skips lefthook version printing
+  - empty_summary # Skips summary heading when there are no steps to run
+  - execution # Skips printing any execution logs (but prints if the execution failed)
+  - execution_out # Skips printing execution output (but still prints failed commands output)
+  - skips # Skips "skip" printing (i.e. no files matched)
+pre-commit:
+  parallel: true
+  commands:
+    prettier:
+      tags: style glue
+      glob: "*.{json,md,yaml}"
+      stage_fixed: true
+      run: npx --yes prettier --write {staged_files}
+    shellcheck:
+      tags: lint shell
+      glob: "bin/*"
+      run: shellcheck {staged_files}
+    shfmt:
+      tags: style shell
+      glob: "bin/*"
+      stage_fixed: true
+      run: shfmt -w {staged_files}
+    yamllint:
+      tags: lint yaml
+      glob: "*.yaml"
+      run: |
+        yamllint -d "{extends: default, rules: {line-length: {max: 120}, comments: disable}}" {staged_files}
