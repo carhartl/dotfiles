@@ -6,9 +6,9 @@ osascript -e 'tell application "System Preferences" to quit'
 
 # Use most recent ZSH shell from Homebrew by default
 if [ "/opt/homebrew/bin/zsh" != "$SHELL" ]; then
-  echo "Setting up Homebrew zsh..."
-  dscl . -create /Users/"$USER" UserShell /opt/homebrew/bin/zsh
-  echo "Log out for changes to take effect!"
+	echo "Setting up Homebrew zsh..."
+	dscl . -create /Users/"$USER" UserShell /opt/homebrew/bin/zsh
+	echo "Log out for changes to take effect!"
 fi
 
 # Tap to click
@@ -26,7 +26,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Enable keyboard navigation for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
 
-osascript << EOD
+osascript <<EOD
 tell application "Terminal"
     local allOpenedWindows
     local initialOpenedWindows

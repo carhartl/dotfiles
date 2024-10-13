@@ -4,7 +4,7 @@
 
 set -e
 if [[ -z "$1" ]]; then
-  date -u +"%Y-%m-%dT%H:%M:%SZ"
+	date -u +"%Y-%m-%dT%H:%M:%SZ"
 else
-  date -r "$1" +"%Y-%m-%dT%H:%M:%SZ"
+	date -r "$1" +"%Y-%m-%dT%H:%M:%SZ"
 fi

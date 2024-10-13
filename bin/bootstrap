@@ -7,7 +7,7 @@ echo "Bootstrapping dotfiles..."
 # Clone bare repo
 git clone --bare https://github.com/carhartl/dotfiles.git "$HOME/.dotfiles.git"
 function config {
-   /usr/bin/git --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" "$@"
+	/usr/bin/git --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" "$@"
 }
 config checkout
 config submodule update --init --recursive
@@ -15,8 +15,8 @@ config config status.showUntrackedFiles no
 
 # Install Homebrew when necessary
 if test ! "$(which brew)"; then
-  echo "==> Installing Homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	echo "==> Installing Homebrew"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
