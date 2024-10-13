@@ -17,6 +17,7 @@
 	ch = switch
 	b = switch -c
 	p = pull
+	all = add -A
 	amend = commit --amend
 	fix = commit --amend -C HEAD
 	fixup = !sh -c 'git commit --fixup=$1' -
@@ -31,7 +32,6 @@
 	resume = "!$EDITOR $(git ls-files -m)"
 	unstash = stash pop --index
 	tfo = !git restore . && git clean -fd
-	yolo = push --force
 	snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
 	ours = "!f() { git checkout --ours $@ && git add $@; }; f"
 	theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"

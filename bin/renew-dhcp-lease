@@ -1,3 +1,0 @@
-#!/bin/sh
-
-echo "add State:/Network/Interface/en2/RefreshConfiguration temporary" | sudo scutil

@@ -1,6 +1,0 @@
-#!/bin/sh
-
-lat=`echo $1 | sed s/,/./g`
-lng=`echo $2 | sed s/,/./g`
-
-open "http://maps.google.com/maps?f=q&hl=en&q=$lat+$lng"

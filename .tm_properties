@@ -18,9 +18,6 @@ wrapColumn = "Use Window Frame"
 softTabs   = false
 tabSize    = 4
 
-[ text.git-commit ]
-wrapColumn = 72
-
 [ source ]
 softWrap   = false
 wrapColumn = 100
