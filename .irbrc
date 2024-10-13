@@ -1,12 +1,9 @@
 require 'rubygems'
 require 'irb'
 require 'irb/completion'
-require 'irb/ext/save-history'
 
 alias e exit
 
-IRB.conf[:SAVE_HISTORY] = 1000
-IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 IRB.conf[:AUTO_INDENT] = true
 
@@ -70,7 +67,7 @@ def load_irbrc(path)
 
   irbrc = File.join(path, ".irbrc")
 
-  load irbrc if File.exists?(irbrc)
+  load irbrc if File.exist?(irbrc)
 end
 
 load_irbrc Dir.pwd
