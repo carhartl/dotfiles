@@ -5,7 +5,6 @@ require 'irb/completion'
 alias e exit
 
 IRB.conf[:PROMPT_MODE] = :SIMPLE
-IRB.conf[:AUTO_INDENT] = true
 
 class Object
   def interesting_methods
