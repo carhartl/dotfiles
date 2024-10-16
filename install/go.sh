@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cat $HOME/.default-go-packages | xargs go install
+<"$HOME"/.default-go-packages xargs -L1 go install
