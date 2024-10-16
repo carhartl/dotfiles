@@ -2,6 +2,8 @@
 
 .gitconfig.local
 
+.ssh/config.d/*
+
 .ipython/*
 .ipython/profile_default/*
 .ipython/profile_default/startup/*
