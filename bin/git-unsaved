@@ -1,0 +1,3 @@
+#!/bin/sh
+
+npx --yes @well-crafted/git-unsaved
