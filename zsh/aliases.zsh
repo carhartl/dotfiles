@@ -19,6 +19,7 @@ alias pbsort="pbpaste | sort | pbcopy"
 alias backtunes="rsync -av --delete /Volumes/Musik/Music /Volumes/Backup"
 alias x="chmod +x $(ls -tr | tail -1)"
 alias jq=jaq
+alias now=iso8601
 
 # Serve files from current directory
 alias serve="python -m http.server"
