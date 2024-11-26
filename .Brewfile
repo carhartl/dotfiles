@@ -1,5 +1,6 @@
 tap "carhartl/tap"
 brew "carhartl/tap/git-commit-template"
+brew "carhartl/tap/git-wip"
 brew "ccat"
 brew "chart-testing"
 brew "cosign"
