@@ -1,5 +1,5 @@
 [tools]
-kubectl = "system"
+kubectl = "latest"
 node = "lts"
 python = "latest"
 ruby = "latest"
