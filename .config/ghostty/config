@@ -1,0 +1,13 @@
+background-opacity = .8
+clipboard-trim-trailing-spaces
+copy-on-select = true
+cursor-click-to-move
+cursor-style = block
+cursor-style-blink = false
+font-family = Monaspace Neon Var
+font-size = 18
+font-style = Medium
+font-thicken
+mouse-hide-while-typing
+shell-integration-features = no-cursor
+theme = Hyper
