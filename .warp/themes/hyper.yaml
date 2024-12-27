@@ -10,7 +10,7 @@ terminal_colors:
     green: "#33ff00"
     magenta: "#cc00ff"
     red: "#fe0100"
-    white: "#FFFFFF"
+    white: "#ffffff"
     yellow: "#feff00"
   normal:
     black: "#000000"
