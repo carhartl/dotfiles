@@ -8,6 +8,9 @@ font-family = Monaspace Neon Var
 font-size = 18
 font-style = Medium
 font-thicken
+keybind = alt+down=jump_to_prompt:1
+keybind = alt+escape=toggle_quick_terminal
+keybind = alt+up=jump_to_prompt:-1
 mouse-hide-while-typing
 shell-integration-features = no-cursor
 theme = Hyper
