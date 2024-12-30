@@ -8,9 +8,12 @@ font-family = Monaspace Neon Var
 font-size = 18
 font-style = Medium
 font-thicken
-keybind = alt+down=jump_to_prompt:1
 keybind = alt+escape=toggle_quick_terminal
-keybind = alt+up=jump_to_prompt:-1
 mouse-hide-while-typing
 shell-integration-features = no-cursor
 theme = Hyper
+
+# Prompt jump, behave like Terminal.. soon going to be the default
+# and we can remove => https://github.com/ghostty-org/ghostty/pull/3078
+keybind = cmd+up=jump_to_prompt:-1
+keybind = cmd+down=jump_to_prompt:1
