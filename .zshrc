@@ -60,5 +60,4 @@ source "/opt/homebrew/etc/profile.d/z.sh"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"
-eval "$(direnv hook zsh)"
 [ -f ~/.config/op/plugins.sh ] && source ~/.config/op/plugins.sh
