@@ -1,3 +1,4 @@
+export MISE_ENV_FILE=.env
 export PET_GITHUB_ACCESS_TOKEN=
 
 alias mk=minikube
