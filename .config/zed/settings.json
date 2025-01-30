@@ -7,6 +7,23 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-5-sonnet"
+    },
+    "version": "2"
+  },
+  "auto_install_extensions": {
+    "dockerfile": true,
+    "github-theme": true,
+    "golangci-lint": true,
+    "html": true,
+    "ruff": true,
+    "terraform": true,
+    "tokyo-night": true,
+    "toml": true
+  },
   "buffer_font_family": "Monaspace Neon",
   "buffer_font_features": {
     "calt": true,
@@ -30,18 +47,21 @@
   "inlay_hints": {
     "enabled": true
   },
+  "preferred_line_length": 120,
+  "restore_on_startup": "last_session",
   "scrollbar": {
     "show": "system"
   },
   "show_whitespaces": "boundary",
   "show_wrap_guides": false,
+  "soft_wrap": "preferred_line_length",
   "tabs": {
     "file_icons": true,
     "git_status": true
   },
   "theme": {
-    "dark": "Night Owl No Italics",
-    "light": "Night Owl Light No Italics",
+    "dark": "Tokyo Night",
+    "light": "Tokyo Night",
     "mode": "system"
   },
   "ui_font_size": 16,
