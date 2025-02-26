@@ -8,6 +8,8 @@
 	precomposeUnicode = true
 [color]
 	ui = auto
+[column]
+	ui = auto
 [alias]
 	s = status
 	c = commit
@@ -52,10 +54,16 @@
 	branches = branch -a
 	remotes = remote -v
 	stashes = stash list
+[fetch]
+	all = true
+	prune = true
+	pruneTags = true
 [pull]
 	rebase = true
 [push]
+	autoSetupRemote = true
 	default = simple
+	followTags = true
 [commit]
 	gpgSign = true
 	verbose = true
@@ -67,6 +75,7 @@
 	updateRefs = true
 [rerere]
 	enabled = true
+	autoupdate = true
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
@@ -82,10 +91,13 @@
 	prompt = false
 [diff]
 	algorithm = histogram
-	tool = Kaleidoscope
+	colorMoved = plain
 	compactionHeuristic = true
+	mnemonicPrefix = true
+	renames = true
+	tool = Kaleidoscope
 [help]
-	autoCorrect = 10
+	autoCorrect = prompt
 [user]
 	name = Klaus Hartl
 	useConfigOnly = true
