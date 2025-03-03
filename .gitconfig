@@ -8,8 +8,6 @@
 	precomposeUnicode = true
 [color]
 	ui = auto
-[column]
-	ui = auto
 [alias]
 	s = status
 	c = commit
