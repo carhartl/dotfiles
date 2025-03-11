@@ -1,0 +1,10 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-backspace": "editor::DeleteLine",
+      "ctrl-shift-right": "editor::SelectLargerSyntaxNode",
+      "ctrl-shift-left": "editor::SelectSmallerSyntaxNode"
+    }
+  }
+]
