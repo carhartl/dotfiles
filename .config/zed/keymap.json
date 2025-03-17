@@ -9,14 +9,22 @@
   {
     "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
+      "shift shift": "file_finder::Toggle",
+      "ctrl ctrl": "command_palette::Toggle"
     }
   },
   {
     "context": "Editor",
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
-      "cmd-backspace": "editor::DeleteLine"
+      "cmd-backspace": "editor::DeleteLine",
+      "cmd-alt-r": ["workspace::SendKeystrokes", "cmd-shift-e c cmd-shift-e"]
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "c": "project_panel::CollapseAllEntries"
     }
   }
 ]

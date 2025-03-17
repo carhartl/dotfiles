@@ -7,6 +7,9 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "active_pane_modifiers": {
+    "inactive_opacity": 0.8
+  },
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
