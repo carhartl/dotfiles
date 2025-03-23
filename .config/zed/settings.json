@@ -50,6 +50,61 @@
   "inlay_hints": {
     "enabled": true
   },
+  "languages": {
+    "JavaScript": {
+      "formatter": [
+        {
+          "code_actions": {
+            "source.fixAll.eslint": true
+          }
+        },
+        {
+          "external": {
+            "arguments": ["--stdin-filepath", "{buffer_path}", "--no-semi"],
+            "command": "prettier"
+          }
+        }
+      ]
+    },
+    "Markdown": {
+      "format_on_save": "on"
+    },
+    "Python": {
+      "formatter": [
+        {
+          "code_actions": {
+            "source.fixAll.ruff": true,
+            "source.organizeImports.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ],
+      "format_on_save": "on",
+      "language_servers": ["pyright", "ruff"]
+    },
+    "Shell Script": {
+      "formatter": {
+        "external": {
+          "arguments": ["--filename", "{buffer_path}"],
+          "command": "shfmt"
+        }
+      },
+      "format_on_save": "on"
+    }
+  },
+  "lsp": {
+    "terraform-ls": {
+      "initialization_options": {
+        "experimentalFeatures": {
+          "prefillRequiredFields": true
+        }
+      }
+    }
+  },
   "preferred_line_length": 120,
   "restore_on_startup": "last_session",
   "scrollbar": {
