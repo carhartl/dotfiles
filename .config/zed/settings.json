@@ -97,6 +97,15 @@
     }
   },
   "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lint": {
+            "select": ["B", "E", "F", "I", "SIM", "UP"]
+          }
+        }
+      }
+    },
     "terraform-ls": {
       "initialization_options": {
         "experimentalFeatures": {
