@@ -11,6 +11,10 @@
     "inactive_opacity": 0.8
   },
   "assistant": {
+    "inline_assistant_model": {
+      "model": "claude-3-7-sonnet-latest",
+      "provider": "zed.dev"
+    },
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-3-5-sonnet"
@@ -41,6 +45,14 @@
     "ss09": true
   },
   "buffer_font_size": 16,
+  "edit_predictions": {
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false,
+    "mode": "subtle"
+  },
   "file_types": {
     "Dockerfile": ["Dockerfile*"]
   },
