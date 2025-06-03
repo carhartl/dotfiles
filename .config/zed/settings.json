@@ -126,6 +126,12 @@
       }
     }
   },
+  "minimap": {
+    "current_line_highlight": null,
+    "show": "always",
+    "thumb": "always",
+    "thumb_border": "none"
+  },
   "preferred_line_length": 120,
   "restore_on_startup": "last_session",
   "scrollbar": {
