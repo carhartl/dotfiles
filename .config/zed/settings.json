@@ -10,7 +10,7 @@
   "active_pane_modifiers": {
     "inactive_opacity": 0.8
   },
-  "assistant": {
+  "agent": {
     "inline_assistant_model": {
       "model": "claude-3-7-sonnet-latest",
       "provider": "zed.dev"
