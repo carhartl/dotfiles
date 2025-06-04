@@ -17,7 +17,6 @@ SAVEHIST=100000
 setopt AUTO_CD
 
 # Completion
-setopt COMPLETE_ALIASES
 setopt COMPLETE_IN_WORD
 setopt NO_LIST_BEEP
 
