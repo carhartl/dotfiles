@@ -65,6 +65,6 @@ eval "$(mise activate zsh)"
 
 # Make next-prompt, previous-prompt command bindings work in tmux in Ghostty.
 # => https://github.com/ghostty-org/ghostty/discussions/6062
-if [[ -n $GHOSTTY_RESOURCES_DIR && -n $TMUX ]]; then
-  source "$GHOSTTY_RESOURCES_DIR"/shell-integration/zsh/ghostty-integration
+if [[ -n $TMUX ]]; then
+  PS1=$'%{\e]133;A\a%}'$PS1
 fi
