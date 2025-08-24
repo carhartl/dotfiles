@@ -6,11 +6,10 @@ export CLICOLOR=true
 
 export GPG_TTY=$(tty)
 
+export EDITOR=zed
+
 # Project folder that we can `c [tab]` to
 export PROJECTS="$HOME/Workspace"
-
-# Use vim
-export EDITOR=vim
 
 # Better ripgrep config
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
