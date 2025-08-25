@@ -44,6 +44,7 @@
     "ss09": true
   },
   "buffer_font_size": 16,
+  "collaboration_panel": { "button": false },
   "edit_predictions": {
     "copilot": {
       "proxy": null,
@@ -126,11 +127,14 @@
     }
   },
   "minimap": {
-    "current_line_highlight": null,
+    "current_line_highlight": "gutter",
     "show": "always",
     "thumb_border": "none"
   },
   "preferred_line_length": 120,
+  "project_panel": {
+    "default_width": 450
+  },
   "scrollbar": {
     "show": "system"
   },
@@ -140,9 +144,15 @@
     "file_icons": true,
     "git_status": true
   },
+  "terminal": {
+    "default_height": 500
+  },
   "theme": {
     "dark": "Tokyo Night",
     "light": "Tokyo Night"
+  },
+  "title_bar": {
+    "show_branch_icon": true
   },
   "ui_font_size": 16,
   "wrap_guides": [120]
