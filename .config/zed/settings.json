@@ -56,6 +56,9 @@
   "file_types": {
     "Dockerfile": ["Dockerfile*"]
   },
+  "git_panel": {
+    "default_width": 550
+  },
   "indent_guides": {
     "coloring": "indent_aware"
   },
@@ -130,6 +133,9 @@
     "current_line_highlight": "gutter",
     "show": "always",
     "thumb_border": "none"
+  },
+  "outline_panel": {
+    "default_width": 450
   },
   "preferred_line_length": 120,
   "project_panel": {
