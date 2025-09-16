@@ -10,6 +10,8 @@ font-style = Medium
 font-thicken
 keybind = alt+escape=toggle_quick_terminal
 mouse-hide-while-typing
+quick-terminal-position = top
+quick-terminal-size = 40%,100%
 shell-integration-features = no-cursor
 theme = Hyper
 
