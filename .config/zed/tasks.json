@@ -1,0 +1,11 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+[
+  {
+    "label": "List TODOs",
+    "command": "rg",
+    "args": ["--hyperlink-format=file://{path}:{line}", "-e TODO", "-e FIXME"],
+    "use_new_terminal": true,
+    "show_summary": false,
+    "show_command": false
+  }
+]
