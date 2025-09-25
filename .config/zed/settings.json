@@ -161,5 +161,6 @@
     "show_branch_icon": true
   },
   "ui_font_size": 16,
+  "use_system_window_tabs": true,
   "wrap_guides": [120]
 }
