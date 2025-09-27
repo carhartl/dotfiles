@@ -91,15 +91,8 @@
             "source.fixAll.ruff": true,
             "source.organizeImports.ruff": true
           }
-        },
-        {
-          "language_server": {
-            "name": "ruff"
-          }
         }
-      ],
-      "format_on_save": "on",
-      "language_servers": ["pyright", "ruff"]
+      ]
     },
     "Shell Script": {
       "formatter": {
