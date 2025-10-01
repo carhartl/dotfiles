@@ -34,7 +34,13 @@ alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r 
 alias l="ls -1A"
 
 # Update all the things
-alias update="echo '\e[32m==>\e[0m Homebrew...'; brew update; brew upgrade; echo '\e[32m==>\e[0m mise...'; mise up; mise plugins up; echo '\e[32m==>\e[0m Go...'; gup update; echo '\e[32m==>\e[0m Ruby...'; gem update --system; gem update; echo '\e[32m==>\e[0m Python...'; pip install --upgrade pip; echo '\e[32m==>\e[0m Nodejs...'; npm update --location=global npm; npm update --location=global;"
+alias update-homebrew="brew update; brew upgrade"
+alias update-mise="mise up; mise plugins up"
+alias update-go="gup update"
+alias update-ruby="gem update --system; gem update"
+alias update-python="pip install --upgrade pip"
+alias update-js="npm update --location=global npm; npm update --location=global"
+alias update="echo '\e[32m==>\e[0m Homebrew...'; update-homebrew; echo -e '\n'; echo '\e[32m==>\e[0m mise...'; update-mise; echo -e '\n'; echo '\e[32m==>\e[0m Go...'; update-go; echo -e '\n'; echo '\e[32m==>\e[0m Ruby...'; update-ruby; echo -e '\n'; echo '\e[32m==>\e[0m Python...'; update-python; echo -e '\n'; echo '\e[32m==>\e[0m JavaScript...'; update-js;"
 
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
