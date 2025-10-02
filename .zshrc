@@ -62,9 +62,3 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"
 eval "$(mise activate zsh)"
 [ -f ~/.config/op/plugins.sh ] && source ~/.config/op/plugins.sh
-
-# Make next-prompt, previous-prompt command bindings work in tmux in Ghostty.
-# => https://github.com/ghostty-org/ghostty/discussions/6062
-if [[ -n $TMUX ]]; then
-  PS1=$'%{\e]133;A\a%}'$PS1
-fi
