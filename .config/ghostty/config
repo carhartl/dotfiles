@@ -10,7 +10,7 @@ font-style = Medium
 font-thicken
 keybind = cmd+shift+left=goto_split:previous
 keybind = cmd+shift+right=goto_split:next
-keybind = global:cmd+escape=toggle_quick_terminal
+keybind = global:ctrl+escape=toggle_quick_terminal
 mouse-hide-while-typing
 quick-terminal-autohide = false
 quick-terminal-position = top
