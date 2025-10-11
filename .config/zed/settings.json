@@ -51,10 +51,15 @@
       "proxy_no_verify": null
     },
     "enabled_in_text_threads": false,
-    "mode": "subtle"
+    "mode": "eager"
   },
   "file_types": {
     "Dockerfile": ["Dockerfile*"]
+  },
+  "git": {
+    "blame": {
+      "show_avatar": true
+    }
   },
   "git_panel": {
     "default_width": 550
