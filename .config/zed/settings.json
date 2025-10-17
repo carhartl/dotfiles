@@ -16,8 +16,8 @@
       "provider": "zed.dev"
     },
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3.5-sonnet"
+      "model": "gpt-5-codex",
+      "provider": "copilot_chat"
     }
   },
   "auto_install_extensions": {
@@ -44,14 +44,16 @@
     "ss09": true
   },
   "buffer_font_size": 16,
-  "collaboration_panel": { "button": false },
+  "collaboration_panel": {
+    "button": false
+  },
   "edit_predictions": {
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null
     },
     "enabled_in_text_threads": false,
-    "mode": "eager"
+    "mode": "subtle"
   },
   "file_types": {
     "Dockerfile": ["Dockerfile*"]
@@ -74,9 +76,7 @@
     "JavaScript": {
       "formatter": [
         {
-          "code_actions": {
-            "source.fixAll.eslint": true
-          }
+          "code_action": "source.fixAll.eslint"
         },
         {
           "external": {
@@ -90,14 +90,10 @@
       "format_on_save": "on"
     },
     "Python": {
-      "formatter": [
-        {
-          "code_actions": {
-            "source.fixAll.ruff": true,
-            "source.organizeImports.ruff": true
-          }
-        }
-      ]
+      "code_actions_on_format": {
+        "source.fixAll.ruff": true,
+        "source.organizeImports.ruff": true
+      }
     },
     "Shell Script": {
       "formatter": {
@@ -136,8 +132,24 @@
     "default_width": 450
   },
   "preferred_line_length": 120,
+  "prettier": {
+    "allowed": true
+  },
+  "preview_tabs": {
+    "enable_preview_from_code_navigation": true
+  },
+  "profiles": {
+    "Personal": {},
+    "Work": {
+      "features": {
+        "edit_prediction_provider": "copilot"
+      }
+    }
+  },
   "project_panel": {
-    "default_width": 450
+    "default_width": 450,
+    "git_status": true,
+    "sticky_scroll": true
   },
   "scrollbar": {
     "show": "system"
@@ -149,6 +161,7 @@
     "git_status": true
   },
   "terminal": {
+    "copy_on_select": true,
     "default_height": 500
   },
   "theme": {
@@ -159,6 +172,7 @@
     "show_branch_icon": true
   },
   "ui_font_size": 16,
+  "use_smartcase_search": true,
   "use_system_window_tabs": true,
   "wrap_guides": [120]
 }
