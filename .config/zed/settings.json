@@ -11,6 +11,7 @@
     "inactive_opacity": 0.8
   },
   "agent": {
+    "default_profile": "ask",
     "inline_assistant_model": {
       "model": "claude-3-7-sonnet-latest",
       "provider": "zed.dev"
