@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+set -u
+set -o pipefail
+
+osascript <<EOF
+display notification "$(iso8601)" with title "${1-Achtung}"
+EOF
