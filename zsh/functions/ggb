@@ -1,4 +1,0 @@
-# Runs git grep on a pattern, and then uses git blame to see who did it
-ggb() {
-  git grep -n $1 | while IFS=: read i j k; do git blame -L $j,$j $i | cat; done
-}
