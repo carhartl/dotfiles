@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+#
+# Show a date in iso8601 format.
 # Usage: iso8601 [<epoch>]
-# Show a date in iso8601 format
 
 set -e
 if [[ -z "$1" ]]; then

@@ -1,9 +1,6 @@
 #!/bin/sh
 #
-# Usage: git-up
-#
-# Like git-pull but show a short log of changes immediately
-# after merging.
+# Show a short log of changes immediately after merging.
 #
 # Inspired by Kyle Neath's `git up' alias:
 # http://gist.github.com/249223
@@ -16,4 +13,4 @@ set -e
 # Show an abbreviated commit log of stuff that was just merged.
 echo "Log:"
 git log --color --pretty=oneline --abbrev-commit 'HEAD@{1}..' |
-    sed 's/^/  /'
+	sed 's/^/  /'

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 set -e
 
@@ -6,7 +6,7 @@ echo "Bootstrapping dotfiles..."
 
 # Clone bare repo
 git clone --bare https://github.com/carhartl/dotfiles.git "$HOME/.dotfiles.git"
-function config {
+config() {
 	/usr/bin/git --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" "$@"
 }
 config checkout
