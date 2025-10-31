@@ -105,6 +105,9 @@
         }
       },
       "format_on_save": "on"
+    },
+    "Terraform": {
+      "prettier": { "allowed": false }
     }
   },
   "lsp": {
