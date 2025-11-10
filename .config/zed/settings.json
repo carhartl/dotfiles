@@ -22,6 +22,7 @@
     }
   },
   "auto_install_extensions": {
+    "commment": true,
     "dockerfile": true,
     "github-theme": true,
     "golangci-lint": true,
@@ -172,6 +173,24 @@
   "theme": {
     "dark": "Github Light",
     "light": "Github Light"
+  },
+  "theme_overrides": {
+    "Github Light": {
+      "syntax": {
+        "constant.comment.todo": {
+          "color": "#9a6700ff",
+          "font_style": "italic"
+        },
+        "property.comment.error": {
+          "color": "#d1242fff",
+          "font_style": "italic"
+        },
+        "string.comment.info": {
+          "color": "#59636eff",
+          "font_style": "italic"
+        }
+      }
+    }
   },
   "title_bar": {
     "show_branch_icon": true
