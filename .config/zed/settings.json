@@ -94,8 +94,7 @@
     },
     "Python": {
       "code_actions_on_format": {
-        "source.fixAll.ruff": true,
-        "source.organizeImports.ruff": true
+        "source.fixAll.ruff": true
       }
     },
     "Shell Script": {
