@@ -170,8 +170,8 @@
     "default_height": 500
   },
   "theme": {
-    "dark": "Tokyo Night",
-    "light": "Tokyo Night"
+    "dark": "Github Light",
+    "light": "Github Light"
   },
   "title_bar": {
     "show_branch_icon": true
