@@ -76,6 +76,11 @@
     "enabled": true
   },
   "languages": {
+    "Go": {
+      "prettier": {
+        "allowed": false
+      }
+    },
     "JavaScript": {
       "formatter": [
         {
