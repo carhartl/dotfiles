@@ -5,7 +5,7 @@
   selectcmd = "fzf"
   backend = "gist"
   sortby = "description"
-  color = true
+  color = false
 
 [Gist]
   file_name = "pet-snippet.toml"
