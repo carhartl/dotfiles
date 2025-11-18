@@ -1,10 +1,9 @@
 [General]
   snippetfile = "~/.config/pet/snippet.toml"
-  editor = "vim"
+  editor = "zed"
   column = 40
   selectcmd = "fzf"
   backend = "gist"
-  sortby = "description"
   color = false
 
 [Gist]
