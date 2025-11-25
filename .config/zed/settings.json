@@ -155,6 +155,9 @@
   },
   "show_whitespaces": "boundary",
   "soft_wrap": "editor_width",
+  "sticky_scroll": {
+    "enabled": true
+  },
   "tabs": {
     "file_icons": true,
     "git_status": true
