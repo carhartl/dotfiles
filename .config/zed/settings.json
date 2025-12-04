@@ -50,6 +50,7 @@
   "collaboration_panel": {
     "button": false
   },
+  "colorize_brackets": true,
   "edit_predictions": {
     "copilot": {
       "proxy": null,
