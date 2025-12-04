@@ -18,13 +18,7 @@
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
       "cmd-backspace": "editor::DeleteLine",
-      "cmd-alt-r": ["workspace::SendKeystrokes", "cmd-shift-e c cmd-shift-e"]
-    }
-  },
-  {
-    "context": "ProjectPanel && not_editing",
-    "bindings": {
-      "c": "project_panel::CollapseAllEntries"
+      "cmd-alt-left": ["workspace::SendKeystrokes", "cmd-shift-e cmd-left cmd-shift-e"]
     }
   }
 ]
