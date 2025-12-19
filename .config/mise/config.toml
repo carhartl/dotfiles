@@ -4,5 +4,5 @@ python = "latest"
 ruby = "latest"
 terraform = "latest"
 
-[settings]
-pipx_uvx = true
+[settings.pipx]
+uvx = true
