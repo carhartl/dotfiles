@@ -135,9 +135,6 @@
     "default_width": 450
   },
   "preferred_line_length": 120,
-  "preview_tabs": {
-    "enable_preview_from_code_navigation": true
-  },
   "profiles": {
     "Personal": {},
     "Work": {
