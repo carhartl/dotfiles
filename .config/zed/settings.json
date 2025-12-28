@@ -90,6 +90,22 @@
         }
       ]
     },
+    // Workaround for https://github.com/prettier/prettier/issues/15956
+    "JSONC": {
+      "formatter": [
+        {
+          "external": {
+            "arguments": [
+              "--stdin-filepath",
+              "{buffer_path}",
+              "--trailing-comma",
+              "none"
+            ],
+            "command": "prettier"
+          }
+        }
+      ]
+    },
     "Markdown": {
       "format_on_save": "on"
     },
