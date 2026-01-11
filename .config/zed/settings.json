@@ -181,7 +181,8 @@
     "default_height": 500
   },
   "theme": {
-    "dark": "Github Light",
+    "mode": "dark",
+    "dark": "Hyper",
     "light": "Github Light"
   },
   "theme_overrides": {
