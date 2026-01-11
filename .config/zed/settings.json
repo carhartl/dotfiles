@@ -22,7 +22,7 @@
     }
   },
   "auto_install_extensions": {
-    "commment": true,
+    "comment": true,
     "dockerfile": true,
     "github-theme": true,
     "golangci-lint": true,
