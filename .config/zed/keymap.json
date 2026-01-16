@@ -14,6 +14,15 @@
     }
   },
   {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      // Prevent closing the project pane when pressing cmd-w with a tab in preview mode!
+      // => https://github.com/zed-industries/zed/issues/45261
+      "cmd-e": "editor::ToggleFocus",
+      "cmd-w": ["workspace::SendKeystrokes", "cmd-e cmd-w"]
+    }
+  },
+  {
     "context": "Editor",
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
