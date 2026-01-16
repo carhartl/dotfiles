@@ -164,9 +164,11 @@
     "git_status": true,
     "sticky_scroll": true
   },
+  "rounded_selection": false,
   "scrollbar": {
     "show": "system"
   },
+  "scroll_beyond_last_line": "vertical_scroll_margin",
   "show_whitespaces": "boundary",
   "soft_wrap": "editor_width",
   "sticky_scroll": {
