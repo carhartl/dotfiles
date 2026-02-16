@@ -112,7 +112,14 @@
     "Python": {
       "code_actions_on_format": {
         "source.fixAll.ruff": true
-      }
+      },
+      "language_servers": [
+        // Disable basedpyright and enable ty, and otherwise
+        // use the default configuration.
+        "ty",
+        "!basedpyright",
+        "..."
+      ]
     },
     "Shell Script": {
       "formatter": {
@@ -139,6 +146,12 @@
         "experimentalFeatures": {
           "prefillRequiredFields": true
         }
+      }
+    },
+    "ty": {
+      "binary": {
+        "path": "/opt/homebrew/bin/ty",
+        "arguments": ["server"]
       }
     }
   },
