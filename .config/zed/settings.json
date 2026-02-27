@@ -198,7 +198,7 @@
   "theme": {
     "mode": "dark",
     "dark": "Hyper",
-    "light": "Github Light"
+    "light": "GitHub Light"
   },
   "theme_overrides": {
     "Github Light": {
