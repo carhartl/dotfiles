@@ -22,6 +22,8 @@ cp .localrc{.example,}
 
 ^ Adapt the placeholders!
 
+Use `~/.ssh/config.d/local` to maintain a local SSH config that shouldn’t go into dotfiles.
+
 ## Inspired by and thanks to…
 
 - [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
