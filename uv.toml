@@ -1,2 +1,4 @@
+exclude-newer = "1 week"
+
 [pip]
 no-build = true
