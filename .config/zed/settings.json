@@ -129,6 +129,11 @@
     }
   },
   "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "staticcheck": true
+      }
+    },
     "ruff": {
       "initialization_options": {
         "settings": {
