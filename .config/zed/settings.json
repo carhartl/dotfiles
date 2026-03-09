@@ -53,7 +53,8 @@
   "colorize_brackets": true,
   "edit_predictions": {
     "enabled_in_text_threads": false,
-    "mode": "subtle"
+    "mode": "subtle",
+    "provider": "copilot"
   },
   "file_types": {
     "Dockerfile": ["Dockerfile*"]
