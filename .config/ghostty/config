@@ -12,8 +12,12 @@ keybind = cmd+shift+left=goto_split:previous
 keybind = cmd+shift+right=goto_split:next
 keybind = global:ctrl+escape=toggle_quick_terminal
 mouse-hide-while-typing
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = no-bell,notify
+notify-on-command-finish-after = 30s
 quick-terminal-autohide = false
 quick-terminal-position = top
 quick-terminal-size = 40%,100%
 shell-integration-features = no-cursor
 theme = Hyper
+window-inherit-working-directory = false
