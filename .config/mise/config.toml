@@ -1,4 +1,5 @@
 [tools]
+java = "lts"
 node = "lts"
 python = "latest"
 ruby = "latest"

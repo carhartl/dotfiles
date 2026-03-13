@@ -27,6 +27,7 @@
     "github-theme": true,
     "golangci-lint": true,
     "html": true,
+    "java": true,
     "ruby": true,
     "ruff": true,
     "terraform": true,
