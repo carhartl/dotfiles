@@ -98,4 +98,6 @@ cask "1password-cli"
 
 go "github.com/rakyll/gotest"
 go "golang.org/x/tools/cmd/goimports"
+go "golang.org/x/tools/gopls"
 go "golang.org/x/vuln/cmd/govulncheck"
+go "honnef.co/go/tools/cmd/staticcheck"
