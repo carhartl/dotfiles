@@ -19,7 +19,7 @@ pre-commit:
       run: shellcheck {staged_files}
     shfmt:
       tags: style shell
-      glob: "bin/*"
+      glob: "{bin/*,zsh/functions/*,*.zsh,.zlogin,.zshenv,.zshrc}"
       stage_fixed: true
       run: shfmt -w {staged_files}
     yamllint:
