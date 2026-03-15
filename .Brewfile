@@ -95,3 +95,7 @@ cask "visual-studio-code"
 cask "zed"
 cask "1password"
 cask "1password-cli"
+
+go "github.com/rakyll/gotest"
+go "golang.org/x/tools/cmd/goimports"
+go "golang.org/x/vuln/cmd/govulncheck"
