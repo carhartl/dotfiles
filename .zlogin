@@ -2,12 +2,12 @@
 
 # Execute code in the background to not affect the current session
 {
-  # Compile zcompdump, if modified, to increase startup speed
-  zcompdump="${ZDOTDIR:-$HOME}/.zcompdump"
-  if [[ -s "$zcompdump" && (! -s "${zcompdump}.zwc" || "$zcompdump" -nt "${zcompdump}.zwc") ]]; then
-    zcompile "$zcompdump"
-  fi
-} &!
+	# Compile zcompdump, if modified, to increase startup speed
+	zcompdump="${ZDOTDIR:-$HOME}/.zcompdump"
+	if [[ -s "$zcompdump" && (! -s "${zcompdump}.zwc" || "$zcompdump" -nt "${zcompdump}.zwc") ]]; then
+		zcompile "$zcompdump"
+	fi
+} &|
 
 # Setting the desired PATH does not take effect when put in .zshenv! This is because
 # /usr/libexec/path_helper is executed after sourcing .zshenv but it will put /usr/bin
