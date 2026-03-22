@@ -15,4 +15,3 @@
 # /usr/bin/curl being used.
 PATH="/opt/homebrew/opt/curl/bin:$PATH"
 PATH="$HOME/bin:$PATH"
-export PATH
