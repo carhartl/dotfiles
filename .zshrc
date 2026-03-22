@@ -2,8 +2,8 @@
 setopt NULLGLOB EXTENDEDGLOB
 
 typeset -U interactive_files completion_files
-interactive_files=($HOME/*/*.zsh~*/completion.zsh)
-completion_files=($HOME/*/completion.zsh)
+interactive_files=($HOME/zsh/*.zsh~*/completion.zsh)
+completion_files=($HOME/zsh/completion.zsh)
 
 # Load interactive files (everything but the completion)
 for file in ${interactive_files}; do
