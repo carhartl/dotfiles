@@ -119,6 +119,9 @@
         "..."
       ]
     },
+    "Ruby": {
+      "language_servers": ["ruby-lsp"]
+    },
     "Shell Script": {
       "formatter": {
         "external": {
