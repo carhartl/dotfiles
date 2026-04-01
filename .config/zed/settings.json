@@ -28,6 +28,7 @@
     "golangci-lint": true,
     "html": true,
     "java": true,
+    "pkl": true,
     "ruby": true,
     "ruff": true,
     "terraform": true,

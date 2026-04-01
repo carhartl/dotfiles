@@ -1,0 +1,31 @@
+amends "package://github.com/jdx/hk/releases/download/v1.39.0/hk@1.39.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.39.0/hk@1.39.0#/Builtins.pkl"
+
+local linters = new Mapping<String, Step> {
+  ["newlines"] = Builtins.newlines
+  ["pkl"] = Builtins.pkl
+  ["pkl-format"] = Builtins.pkl_format
+  ["prettier"] = Builtins.prettier
+  ["shellcheck"] = (Builtins.shellcheck) {
+    glob = "bin/*"
+  }
+  ["shfmt"] = (Builtins.shfmt) {
+    glob = List("bin/*", "zsh/functions/*", "**/*.zsh", ".zprofile", ".zshenv", ".zshrc")
+  }
+  ["trailing-whitespace"] = Builtins.trailing_whitespace
+}
+
+hooks {
+  ["pre-commit"] {
+    fix = true
+    stash = "git"
+    steps = linters
+  }
+  ["fix"] {
+    fix = true
+    steps = linters
+  }
+  ["check"] {
+    steps = linters
+  }
+}
