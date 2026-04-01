@@ -9,8 +9,25 @@ local linters = new Mapping<String, Step> {
   ["shellcheck"] = (Builtins.shellcheck) {
     glob = "bin/*"
   }
-  ["shfmt"] = (Builtins.shfmt) {
+  // Custom shfmt linter - we need to avoid `--apply-ignore`, otherwise Zsh config files will be ignored..
+  // https://github.com/jdx/hk/discussions/790
+  //
+  // The overlap of `bin/*` with the shellcheck linter seems to be ok,
+  // shellcheck doesn't autofix.
+  ["shfmt"] {
+    batch = true
     glob = List("bin/*", "zsh/functions/*", "**/*.zsh", ".zprofile", ".zshenv", ".zshrc")
+    check_diff = "shfmt -l {{ files }}"
+    check = "shfmt -d {{ files }}"
+    check_list_files =
+      """
+      files=$(shfmt -l {{ files }})
+      if [ -n "$files" ]; then
+        echo "$files"
+        exit 1
+      fi
+      """
+    fix = "shfmt -w {{ files }}"
   }
   ["trailing-whitespace"] = Builtins.trailing_whitespace
 }
@@ -18,7 +35,7 @@ local linters = new Mapping<String, Step> {
 hooks {
   ["pre-commit"] {
     fix = true
-    stash = "git"
+    stash = false // Required to make the shfmt linter work for now - https://github.com/jdx/hk/discussions/790
     steps = linters
   }
   ["fix"] {
