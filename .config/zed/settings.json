@@ -77,6 +77,11 @@
     "enabled": true
   },
   "languages": {
+    "Java": {
+      "formatter": "language_server",
+      "hard_tabs": false, // for Google Java Style
+      "tab_size": 2 // for Google Java Style
+    },
     "JavaScript": {
       "formatter": [
         {
@@ -140,6 +145,20 @@
     "gopls": {
       "initialization_options": {
         "staticcheck": true
+      }
+    },
+    "jdtls": {
+      "initialization_options": {
+        "settings": {
+          "java": {
+            "format": {
+              "settings": {
+                "profile": "GoogleStyle",
+                "url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml"
+              }
+            }
+          }
+        }
       }
     },
     "ruff": {
