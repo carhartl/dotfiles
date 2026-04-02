@@ -136,7 +136,6 @@
           "command": "shfmt"
         }
       },
-      "format_on_save": "on",
       "hard_tabs": true,
       "tab_size": 4
     }
