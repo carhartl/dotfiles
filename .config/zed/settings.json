@@ -24,6 +24,7 @@
   "auto_install_extensions": {
     "comment": true,
     "dockerfile": true,
+    "editorconfig": true,
     "github-theme": true,
     "golangci-lint": true,
     "html": true,
