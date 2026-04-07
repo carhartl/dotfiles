@@ -1,4 +1,0 @@
-[{.zprofile,.zshenv,.zshrc,zsh/functions/*}]
-# Help shfmt to apply the proper dialect for my zsh config files..
-# => `man shfmt`.
-shell_variant = zsh
