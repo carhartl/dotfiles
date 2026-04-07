@@ -83,6 +83,10 @@
   },
   "languages": {
     "Java": {
+      "code_actions_on_format": {
+        "quickfix": true,
+        "source": true
+      },
       "formatter": "language_server",
       "hard_tabs": false, // for Google Java Style
       "tab_size": 2 // for Google Java Style
@@ -155,11 +159,63 @@
       "initialization_options": {
         "settings": {
           "java": {
+            "cleanup": {
+              "actions": [
+                "addDeprecated",
+                "addFinalModifier",
+                "addOverride",
+                "instanceofPatternMatch",
+                "invertEquals",
+                "lambdaExpression",
+                "lambdaExpressionFromAnonymousClass",
+                "organizeImports",
+                "qualifyMembers",
+                "qualifyStaticMembers",
+                "redundantComparisonStatement",
+                "redundantFallingThroughBlockEnd",
+                "redundantIfCondition",
+                "redundantModifiers",
+                "redundantSuperCall",
+                "renameUnusedLocalVariables",
+                "stringConcatToTextBlock",
+                "switchExpression",
+                "tryWithResource",
+                "useSwitchForInstanceofPattern"
+              ]
+            },
             "format": {
+              "onType": {
+                "enabled": true
+              },
               "settings": {
                 "profile": "GoogleStyle",
                 "url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml"
               }
+            },
+            "import": {
+              "gradle": {
+                "enabled": true,
+                "wrapper": {
+                  "enabled": true
+                }
+              }
+            },
+            "jdt": {
+              "ls": {
+                "groovySupport": {
+                  "enabled": true
+                }
+              }
+            },
+            "sources": {
+              "organizeImports": {
+                "starThreshold": 5,
+                "staticStarThreshold": 5
+              }
+            },
+            "saveActions": {
+              "cleanup": true,
+              "organizeImports": false
             }
           }
         }
