@@ -7,10 +7,11 @@ local linters = new Mapping<String, Step> {
   ["pkl-format"] = Builtins.pkl_format
   ["prettier"] = Builtins.prettier
   ["shellcheck"] = (Builtins.shellcheck) {
-    glob = "bin/*"
+    types = List("shell")
   }
   ["shfmt"] = (Builtins.shfmt) {
-    glob = List("bin/*", "zsh/functions/*", "**/*.zsh", ".zprofile", ".zshenv", ".zshrc")
+    // Must exclude bin/2date, which is a Ruby script
+    glob = List("bin/[!2]*", "zsh/functions/*", "**/*.zsh", ".zprofile", ".zshenv", ".zshrc")
   }
   ["trailing-whitespace"] = Builtins.trailing_whitespace
 }
