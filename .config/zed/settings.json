@@ -21,6 +21,11 @@
       "provider": "copilot_chat"
     }
   },
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry"
+    }
+  },
   "auto_install_extensions": {
     "comment": true,
     "dockerfile": true,
