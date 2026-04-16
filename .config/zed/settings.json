@@ -17,12 +17,16 @@
       "provider": "zed.dev"
     },
     "default_model": {
-      "model": "gpt-5-codex",
+      "model": "gpt-5.3-codex",
       "provider": "copilot_chat"
     }
   },
   "agent_servers": {
     "codex-acp": {
+      "default_config_options": {
+        "model": "gpt-5.3-codex",
+        "reasoning_effort": "medium"
+      },
       "type": "registry"
     }
   },
