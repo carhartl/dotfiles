@@ -64,7 +64,6 @@
   },
   "colorize_brackets": true,
   "edit_predictions": {
-    "enabled_in_text_threads": false,
     "mode": "subtle",
     "provider": "copilot"
   },
@@ -257,14 +256,6 @@
     "default_width": 450
   },
   "preferred_line_length": 120,
-  "profiles": {
-    "Personal": {},
-    "Work": {
-      "edit_predictions": {
-        "provider": "copilot"
-      }
-    }
-  },
   "project_panel": {
     "default_width": 450,
     "git_status": true,
@@ -310,9 +301,6 @@
         }
       }
     }
-  },
-  "title_bar": {
-    "show_branch_icon": true
   },
   "ui_font_size": 16,
   "use_smartcase_search": true,
