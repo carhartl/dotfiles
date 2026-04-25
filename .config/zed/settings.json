@@ -266,6 +266,7 @@
     "default_width": 450,
     "dock": "right",
     "git_status": true,
+    "git_status_indicator": true,
     "sticky_scroll": true
   },
   "rounded_selection": false,
@@ -308,6 +309,9 @@
         }
       }
     }
+  },
+  "title_bar": {
+    "show_branch_status_icon": true
   },
   "ui_font_size": 16,
   "use_smartcase_search": true,
