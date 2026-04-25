@@ -12,6 +12,7 @@
   },
   "agent": {
     "default_profile": "ask",
+    "dock": "left",
     "inline_assistant_model": {
       "model": "claude-3-7-sonnet-latest",
       "provider": "zed.dev"
@@ -60,7 +61,8 @@
   },
   "buffer_font_size": 16,
   "collaboration_panel": {
-    "button": false
+    "button": false,
+    "dock": "left"
   },
   "colorize_brackets": true,
   "edit_predictions": {
@@ -76,7 +78,8 @@
     }
   },
   "git_panel": {
-    "default_width": 550
+    "default_width": 550,
+    "dock": "left"
   },
   "indent_guides": {
     "coloring": "indent_aware"
@@ -253,11 +256,13 @@
     "thumb_border": "none"
   },
   "outline_panel": {
-    "default_width": 450
+    "default_width": 450,
+    "dock": "left"
   },
   "preferred_line_length": 120,
   "project_panel": {
     "default_width": 450,
+    "dock": "right",
     "git_status": true,
     "sticky_scroll": true
   },
