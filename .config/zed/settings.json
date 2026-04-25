@@ -20,7 +20,9 @@
     "default_model": {
       "model": "gpt-5.3-codex",
       "provider": "copilot_chat"
-    }
+    },
+    "new_thread_location": "new_worktree",
+    "play_sound_when_agent_done": "always"
   },
   "agent_servers": {
     "codex-acp": {
