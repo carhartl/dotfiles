@@ -11,15 +11,15 @@
     "inactive_opacity": 0.8
   },
   "agent": {
+    "default_model": {
+      "model": "gpt-5.3-codex",
+      "provider": "copilot_chat"
+    },
     "default_profile": "ask",
     "dock": "left",
     "inline_assistant_model": {
       "model": "claude-3-7-sonnet-latest",
       "provider": "zed.dev"
-    },
-    "default_model": {
-      "model": "gpt-5.3-codex",
-      "provider": "copilot_chat"
     },
     "new_thread_location": "new_worktree",
     "play_sound_when_agent_done": "always"
@@ -288,9 +288,9 @@
     "default_height": 500
   },
   "theme": {
-    "mode": "dark",
     "dark": "Hyper",
-    "light": "GitHub Light"
+    "light": "GitHub Light",
+    "mode": "dark"
   },
   "theme_overrides": {
     "Github Light": {
