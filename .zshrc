@@ -50,15 +50,15 @@ bindkey '^[T' tetris # Escape, Shift + T
 autoload colors && colors
 
 # Setup prompt
-zstyle ":prompt:pure:git:stash" show yes
-zstyle :prompt:pure:git:dirty detailed yes
+zstyle ':prompt:pure:git:dirty' detailed yes
+zstyle ':prompt:pure:git:stash' show yes
 autoload -U promptinit
 promptinit
 prompt pure
 
-source "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-source "/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "/opt/homebrew/etc/profile.d/z.sh"
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/etc/profile.d/z.sh
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"

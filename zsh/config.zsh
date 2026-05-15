@@ -3,7 +3,7 @@ autoload -U $HOME/zsh/functions/*(:t)
 
 # Variables
 
-CORRECT_IGNORE_FILE=".*"
+CORRECT_IGNORE_FILE='.*'
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
@@ -44,20 +44,17 @@ setopt PROMPT_SUBST
 setopt LOCAL_OPTIONS
 setopt LOCAL_TRAPS
 
-# Do menu-driven completion
-zstyle ':completion:*' menu select
-
 # Key bindings
 
 bindkey -e
 
-bindkey "^[[3~" delete-char
+bindkey '^[[3~' delete-char
 
 # Allow editing long commands in editor
 autoload -U edit-command-line
 zle -N edit-command-line
-bindkey "^xe" edit-command-line
-bindkey "^x^e" edit-command-line
+bindkey '^xe' edit-command-line
+bindkey '^x^e' edit-command-line
 
 # ctrl-g => git status on blank screen, whithout adding to history
 _git-status() {
@@ -74,15 +71,15 @@ _after-first-word() {
 	zle forward-word
 }
 zle -N _after-first-word
-bindkey "^x^a" _after-first-word
+bindkey '^x^a' _after-first-word
 
 # Bind history to up down keys
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search
-bindkey "^[[B" down-line-or-beginning-search
+bindkey '^[[A' up-line-or-beginning-search
+bindkey '^[[B' down-line-or-beginning-search
 
 # Do history expansion on space
-bindkey " " magic-space
+bindkey ' ' magic-spac

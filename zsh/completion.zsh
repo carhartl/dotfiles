@@ -1,3 +1,6 @@
+# Do menu-driven completion
+zstyle ':completion:*' menu select
+
 # Matches case insensitive for lowercase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
