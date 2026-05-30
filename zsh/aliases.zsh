@@ -10,7 +10,7 @@ alias rehist="fc -RI"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias ws="cd ~/Workspace"
-alias e="\${(z)VISUAL:-\${(z)EDITOR}} \${1:-.}"
+alias e='${(z)VISUAL:-${(z)EDITOR}} ${1:-.}'
 alias o="open"
 alias oo="open ."
 alias todos="rg TODO: -uu -g '!*.git' -g '!venv' -g '!.venv' -g '!node_modules' -g '!dist'"
@@ -28,7 +28,7 @@ alias serve="python -m http.server"
 alias redo='sudo $(fc -ln -1)'
 
 # Lists the ten most used commands
-alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
+alias history-stat='history 0 | awk "{print $2}" | sort | uniq -c | sort -n -r | head'
 
 # Lists in one column, hidden files
 alias l="ls -1A"

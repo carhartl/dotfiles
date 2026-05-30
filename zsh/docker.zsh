@@ -1,4 +1,4 @@
-alias ds="docker stop \$(docker ps -a -q)"
+alias ds='docker stop $(docker ps -a -q)'
 
 function d {
 	if [[ $# > 0 ]]; then
