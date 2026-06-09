@@ -37,6 +37,7 @@
     "dockerfile": true,
     "editorconfig": true,
     "github-theme": true,
+    "git-firefly": true,
     "golangci-lint": true,
     "html": true,
     "java": true,
