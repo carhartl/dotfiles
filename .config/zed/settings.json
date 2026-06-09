@@ -21,7 +21,6 @@
       "model": "claude-3-7-sonnet-latest",
       "provider": "zed.dev"
     },
-    "new_thread_location": "new_worktree",
     "play_sound_when_agent_done": "always"
   },
   "agent_servers": {
