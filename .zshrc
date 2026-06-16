@@ -15,10 +15,11 @@ autoload -Uz compinit
 
 # Only parse dumpfile if it's 24 hours since it was last opened,
 # improves shell startup
-for dump in ~/.zcompdump(N.mh+24); do
+if [[ -n ~/.zcompdump(#qNmh-24) ]]; then
+	compinit -C
+else
 	compinit
-done
-compinit -C
+fi
 
 # Load completion after autocomplete loads
 for file in ${completion_files}; do
