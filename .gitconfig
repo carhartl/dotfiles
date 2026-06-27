@@ -1,10 +1,3 @@
-[init]
-	defaultBranch = main
-[core]
-	editor = vim
-	precomposeUnicode = true
-[color]
-	ui = auto
 [alias]
 	s = status
 	c = commit
@@ -49,41 +42,16 @@
 	branches = branch -a
 	remotes = remote -v
 	stashes = stash list
-[fetch]
-	all = true
-	prune = true
-	pruneTags = true
-[pull]
-	rebase = true
-[push]
-	autoSetupRemote = true
-	default = simple
-	followTags = true
+[branch]
+	sort = -committerdate
+[color]
+	ui = auto
 [commit]
 	gpgSign = true
 	verbose = true
-[tag]
-	gpgSign = true
-[rebase]
-	autoSquash = true
-	autoStash = true
-	updateRefs = true
-[rerere]
-	enabled = true
-	autoupdate = true
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool]
-	keepBackup = true
-	prompt = false
-[merge]
-	conflictStyle = zdiff3
-	tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
+[core]
+	editor = vim
+	precomposeUnicode = true
 [diff]
 	algorithm = histogram
 	colorMoved = plain
@@ -91,12 +59,45 @@
 	mnemonicPrefix = true
 	renames = true
 	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[fetch]
+	all = true
+	prune = true
+	pruneTags = true
 [help]
 	autoCorrect = prompt
+[init]
+	defaultBranch = main
+[merge]
+	conflictStyle = zdiff3
+	tool = Kaleidoscope
+[mergetool]
+	keepBackup = true
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+	default = simple
+	followTags = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+[rerere]
+	autoupdate = true
+	enabled = true
+[tag]
+	gpgSign = true
 [user]
 	name = Klaus Hartl
 	useConfigOnly = true
-[branch]
-	sort = -committerdate
+
 [include]
 	path = ~/.gitconfig.local

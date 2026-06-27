@@ -1,8 +1,3 @@
-[user]
-	# Intentionally omitting email in this section, relying on `useConfigOnly = true`
-
-	# Default signing key, but can change
-	signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC256+DdSm////dtkpTvs3TsTUSOIEf8zFTQbqSkFYFQ
 [credential]
 	# Not necessary when exclusively using git via ssh
 	helper = osxkeychain
@@ -12,5 +7,11 @@
 [gpg "ssh"]
 	allowedSignersFile = ~/.ssh/allowed_signers
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[user]
+	# Intentionally omitting email in this section, relying on `useConfigOnly = true`
+
+	# Default signing key, but can change
+	signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC256+DdSm////dtkpTvs3TsTUSOIEf8zFTQbqSkFYFQ
+
 [includeIf "gitdir:**/work/**"]
 	path = ~/work/.gitconfig.local
