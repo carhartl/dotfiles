@@ -155,6 +155,26 @@
       },
       "hard_tabs": true,
       "tab_size": 4
+    },
+    "XML": {
+      "formatter": {
+        "external": {
+          "arguments": [
+            "--plugin=../../Library/Application Support/Zed/prettier/node_modules/@prettier/plugin-xml/src/plugin.js",
+            "--stdin-filepath",
+            "{buffer_path}",
+            "--tab-width",
+            "4",
+            "--xml-whitespace-sensitivity",
+            "preserve"
+          ],
+          "command": "prettier"
+        }
+      },
+      "prettier": {
+        "allowed": true,
+        "plugins": ["@prettier/plugin-xml"]
+      }
     }
   },
   "lsp": {
