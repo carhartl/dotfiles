@@ -58,7 +58,7 @@ promptinit
 prompt pure
 
 if [[ ! -d ~/.zsh-defer ]]; then
-	git clone https://github.com/romkatv/zsh-defer.git ${ZDOTDIR:-$HOME}/.zsh-defer
+	git clone --quiet --depth=1 https://github.com/romkatv/zsh-defer.git ~/.zsh-defer
 fi
 source ~/.zsh-defer/zsh-defer.plugin.zsh
 zsh-defer source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
