@@ -79,7 +79,7 @@ brew "z"
 brew "zizmor"
 brew "zsh"
 brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
+brew "zsh-fast-syntax-highlighting"
 
 cask "appcleaner"
 cask "google-chrome"

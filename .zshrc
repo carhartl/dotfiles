@@ -57,11 +57,15 @@ autoload -U promptinit
 promptinit
 prompt pure
 
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/etc/profile.d/z.sh
+if [[ ! -d ~/.zsh-defer ]]; then
+	git clone https://github.com/romkatv/zsh-defer.git ${ZDOTDIR:-$HOME}/.zsh-defer
+fi
+source ~/.zsh-defer/zsh-defer.plugin.zsh
+zsh-defer source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+zsh-defer source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+zsh-defer source /opt/homebrew/etc/profile.d/z.sh
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(fzf --zsh)"
-eval "$(mise activate zsh)"
-[ -f ~/.config/op/plugins.sh ] && source ~/.config/op/plugins.sh
+zsh-defer eval "$(fzf --zsh)"
+zsh-defer eval "$(mise activate zsh)"
+zsh-defer -c '[ -f ~/.config/op/plugins.sh ] && source ~/.config/op/plugins.sh'
