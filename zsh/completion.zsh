@@ -9,7 +9,3 @@ zstyle ':completion:*' insert-tab pending
 
 # Use cache for completion, some functions are slow
 zstyle ':completion:*' use-cache on
-
-compdef g=git
-compdef d=docker
-compdef dots=git

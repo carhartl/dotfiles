@@ -1,6 +1,3 @@
-fpath=($HOME/zsh/functions $HOME/.docker/completions $fpath)
-autoload -U $HOME/zsh/functions/*(:t)
-
 # Variables
 
 CORRECT_IGNORE_FILE='.*'

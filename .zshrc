@@ -1,11 +1,11 @@
+fpath=($HOME/zsh/functions $HOME/.docker/completions $fpath)
+autoload -Uz $HOME/zsh/functions/*(.:t)
+
 # Interactive environment configs
 setopt NULLGLOB EXTENDEDGLOB
 
-typeset -U interactive_files completion_files
-interactive_files=($HOME/zsh/*.zsh~*/completion.zsh)
-completion_files=($HOME/zsh/completion.zsh)
-
-# Load interactive files (everything but the completion)
+typeset -U interactive_files
+interactive_files=($HOME/zsh/*.zsh)
 for file in ${interactive_files}; do
 	source "$file"
 done
@@ -13,20 +13,21 @@ done
 # Initialize autocomplete here, otherwise functions won't be loaded
 autoload -Uz compinit
 
-# Only parse dumpfile if it's 24 hours since it was last opened,
-# improves shell startup
-if [[ -n ~/.zcompdump(#qNmh-24) ]]; then
+# Load and initialize the completion system ignoring insecure directories with a
+# cache time of 20 hours, so it should almost always regenerate the first time a
+# shell is opened each day.
+local zcompdump="${ZDOTDIR:-$HOME}/.zcompdump"
+local zcompdump_cache=($zcompdump(Nmh-20))
+if (($#zcompdump_cache)); then
+	# -C (skip function check) implies -i (skip security check).
 	compinit -C
 else
-	compinit
+	compinit -i
+	touch "$zcompdump" # Ensure timestamp updates to reset the cache timeout.
 fi
+compinit
 
-# Load completion after autocomplete loads
-for file in ${completion_files}; do
-	source "$file"
-done
-
-unset interactive_files completion_files
+unset interactive_files
 unsetopt NULLGLOB EXTENDEDGLOB
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
