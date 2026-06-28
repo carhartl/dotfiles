@@ -1,6 +1,9 @@
 fpath=($HOME/zsh/functions $HOME/.docker/completions $fpath)
 autoload -Uz $HOME/zsh/functions/*(.:t)
 
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+antidote load
+
 # Interactive environment configs
 setopt NULLGLOB EXTENDEDGLOB
 
@@ -54,16 +57,8 @@ autoload colors && colors
 # Setup prompt
 zstyle ':prompt:pure:git:dirty' detailed yes
 zstyle ':prompt:pure:git:stash' show yes
-autoload -U promptinit
-promptinit
-prompt pure
+autoload -Uz promptinit && promptinit && prompt pure
 
-if [[ ! -d ~/.zsh-defer ]]; then
-	git clone --quiet --depth=1 https://github.com/romkatv/zsh-defer.git ~/.zsh-defer
-fi
-source ~/.zsh-defer/zsh-defer.plugin.zsh
-zsh-defer source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-zsh-defer source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 zsh-defer source /opt/homebrew/etc/profile.d/z.sh
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
