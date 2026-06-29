@@ -1,0 +1,12 @@
+# TODO: pin them all for security!
+# TODO: try?
+# rupa/z
+
+#romkatv/zsh-bench kind:path
+romkatv/zsh-defer
+
+sindresorhus/pure kind:fpath
+
+zdharma-continuum/fast-syntax-highlighting kind:defer
+zsh-users/zsh-autosuggestions kind:defer
+zsh-users/zsh-history-substring-search kind:defer
