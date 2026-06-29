@@ -1,7 +1,7 @@
 # Variables
 
 CORRECT_IGNORE_FILE='.*'
-HISTFILE=$HOME/.zsh_history
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 
