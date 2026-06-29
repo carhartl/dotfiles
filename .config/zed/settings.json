@@ -187,6 +187,9 @@
       "initialization_options": {
         "settings": {
           "java": {
+            "autobuild": {
+              "enabled": true
+            },
             "cleanup": {
               "actions": [
                 "addDeprecated",
@@ -211,7 +214,50 @@
                 "useSwitchForInstanceofPattern"
               ]
             },
+            "compile": {
+              "nullAnalysis": {
+                "mode": "automatic"
+              }
+            },
+            "completion": {
+              "chain": {
+                "enabled": true
+              },
+              "enabled": true,
+              "favoriteStaticMembers": [
+                "org.junit.Assert.*",
+                "org.junit.Assume.*",
+                "org.junit.jupiter.api.Assertions.*",
+                "org.junit.jupiter.api.Assumptions.*",
+                "org.junit.jupiter.api.DynamicContainer.*",
+                "org.junit.jupiter.api.DynamicTest.*",
+                "org.mockito.Mockito.*",
+                "org.mockito.ArgumentMatchers.*"
+              ],
+              "guessMethodArguments": "insertParameterNames",
+              "importOrder": ["java", "javax", "com", "org"],
+              "overwrite": true,
+              "postfix": {
+                "enabled": true
+              }
+            },
+            "configuration": {
+              "maven": {
+                "userSettings": "~/.m2/settings.xml"
+              },
+              "runtimes": [],
+              "updateBuildConfiguration": "automatic"
+            },
+            "contentProvider": {
+              "preferred": null
+            },
+            "errors": {
+              "incompleteClasspath": {
+                "severity": "warning"
+              }
+            },
             "format": {
+              "enabled": true,
               "onType": {
                 "enabled": true
               },
@@ -220,12 +266,31 @@
                 "url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml"
               }
             },
+            "implementationCodeLens": "all",
             "import": {
+              "exclusions": [
+                "**/node_modules/**",
+                "**/.metadata/**",
+                "**/archetype-resources/**",
+                "**/META-INF/maven/**",
+                "/**/test/**"
+              ],
               "gradle": {
                 "enabled": true,
                 "wrapper": {
                   "enabled": true
+                },
+                "annotationProcessing": {
+                  "enabled": true
                 }
+              },
+              "maven": {
+                "enabled": true
+              }
+            },
+            "inlayHints": {
+              "parameterNames": {
+                "enabled": "all"
               }
             },
             "jdt": {
@@ -235,15 +300,36 @@
                 }
               }
             },
+            "maven": {
+              "downloadSources": true,
+              "updateSnapshots": true
+            },
+            "maxConcurrentBuilds": 1,
+            "references": {
+              "includeAccessors": true,
+              "includeDecompiledSources": true
+            },
+            "referencesCodeLens": {
+              "enabled": true
+            },
+            "saveActions": {
+              "cleanup": true,
+              "organizeImports": false
+            },
+            "signatureHelp": {
+              "description": {
+                "enabled": true
+              },
+              "enabled": true
+            },
             "sources": {
               "organizeImports": {
                 "starThreshold": 5,
                 "staticStarThreshold": 5
               }
             },
-            "saveActions": {
-              "cleanup": true,
-              "organizeImports": false
+            "updateImportsOnPaste": {
+              "enabled": true
             }
           }
         }
