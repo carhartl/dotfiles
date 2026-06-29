@@ -16,4 +16,3 @@
 # it will put /usr/bin in front of the current PATH, resulting in macOS's curl at
 # /usr/bin/curl being used.
 PATH="/opt/homebrew/opt/curl/bin:$PATH"
-PATH="$HOME/bin:$PATH"
