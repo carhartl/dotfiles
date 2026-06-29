@@ -21,13 +21,14 @@
       "model": "claude-3-7-sonnet-latest",
       "provider": "zed.dev"
     },
-    "play_sound_when_agent_done": "always"
+    "play_sound_when_agent_done": "always",
+    "show_turn_stats": true
   },
   "agent_servers": {
     "codex-acp": {
       "default_config_options": {
         "model": "gpt-5.3-codex",
-        "reasoning_effort": "medium"
+        "reasoning_effort": "high"
       },
       "type": "registry"
     }
@@ -62,6 +63,7 @@
     "ss09": true
   },
   "buffer_font_size": 16,
+  "cli_default_open_behavior": "new_window",
   "collaboration_panel": {
     "button": false,
     "dock": "left"
@@ -142,9 +144,6 @@
         "!basedpyright",
         "..."
       ]
-    },
-    "Ruby": {
-      "language_servers": ["ruby-lsp"]
     },
     "Shell Script": {
       "formatter": {
@@ -353,8 +352,8 @@
     },
     "ty": {
       "binary": {
-        "path": "/opt/homebrew/bin/ty",
-        "arguments": ["server"]
+        "arguments": ["server"],
+        "path": "/opt/homebrew/bin/ty"
       }
     }
   },
@@ -370,6 +369,7 @@
   "preferred_line_length": 120,
   "project_panel": {
     "default_width": 450,
+    "diagnostic_badges": true,
     "dock": "right",
     "git_status": true,
     "git_status_indicator": true,
