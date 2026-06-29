@@ -38,7 +38,3 @@ path=(
 	/usr/local/{,s}bin(N)
 	$path
 )
-
-if [[ ! -o LOGIN ]] && [[ -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
-	source "${ZDOTDIR:-$HOME}/.zprofile"
-fi
