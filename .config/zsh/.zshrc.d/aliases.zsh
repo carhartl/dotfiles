@@ -1,3 +1,8 @@
+#!/bin/zsh
+#
+# .aliases - Set whatever shell aliases you want.
+#
+
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -58,3 +63,30 @@ alias urldecode='python3 -c "import sys, urllib.parse as ul; print(ul.unquote_pl
 
 # Pretty print all paths
 alias path='echo -e ${PATH//:/\\n}'
+
+# Misc
+alias please=sudo
+alias zshrc='${EDITOR:-vim} "${ZDOTDIR:-$HOME}"/.zshrc'
+alias zdot='cd ${ZDOTDIR:-~}'
+
+# Git
+alias ga="git add"
+alias gb="git switch -c"
+alias gc="git commit"
+alias gd="git difftool"
+alias gdc="git difftool --cached"
+alias gl="git l"
+alias gp="git pull"
+alias gs="git status --short"
+
+# Docker
+alias ds='docker stop $(docker ps -a -q)'
+
+# Kubernetes
+alias k=kubectl
+alias kns=kubens
+alias kct=kubectx
+
+# Ruby
+alias b="bundle"
+alias be="bundle exec"

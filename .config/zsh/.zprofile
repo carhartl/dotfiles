@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/zsh
 
 # Compile zcompdump, if modified, in background to increase startup speed.
 {

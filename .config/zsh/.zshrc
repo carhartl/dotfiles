@@ -1,19 +1,30 @@
-fpath=($HOME/zsh/functions $HOME/.docker/completions $fpath)
-autoload -Uz $HOME/zsh/functions/*(.:t)
+#!/bin/zsh
+#
+# .zshrc - Zsh file loaded on interactive shell sessions.
+#
 
+# Lazy-load (autoload) Zsh function files from a directory.
+ZFUNCDIR=${ZDOTDIR:-$HOME}/.zfunctions
+fpath=($ZFUNCDIR $HOME/.docker/completions $fpath)
+autoload -Uz $ZFUNCDIR/*(.:t)
+
+# Set any zstyles you might use for configuration.
+[[ ! -f ${ZDOTDIR:-$HOME}/.zstyles ]] || source ${ZDOTDIR:-$HOME}/.zstyles
+
+# Load antidote plugins.
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 antidote load
 
-# Interactive environment configs
-setopt NULLGLOB EXTENDEDGLOB
-
-typeset -U interactive_files
-interactive_files=($HOME/zsh/*.zsh)
-for file in ${interactive_files}; do
-	source "$file"
+# Source anything in .zshrc.d.
+for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
+	# Ignore tilde files.
+	if [[ $_rc:t != '~'* ]]; then
+		source "$_rc"
+	fi
 done
+unset _rc
 
-# Initialize autocomplete here, otherwise functions won't be loaded
+# Completions
 autoload -Uz compinit
 
 # Load and initialize the completion system ignoring insecure directories with a
@@ -28,10 +39,6 @@ else
 	compinit -i
 	touch "$zcompdump" # Ensure timestamp updates to reset the cache timeout.
 fi
-compinit
-
-unset interactive_files
-unsetopt NULLGLOB EXTENDEDGLOB
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -55,8 +62,6 @@ bindkey '^[T' tetris # Escape, Shift + T
 autoload colors && colors
 
 # Setup prompt
-zstyle ':prompt:pure:git:dirty' detailed yes
-zstyle ':prompt:pure:git:stash' show yes
 autoload -Uz promptinit && promptinit && prompt pure
 
 zsh-defer source /opt/homebrew/etc/profile.d/z.sh
