@@ -2,6 +2,8 @@
 
 CORRECT_IGNORE_FILE='.*'
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HISTORY_SUBSTRING_SEARCH_FUZZY=1
+HISTORY_SUBSTRING_SEARCH_PREFIXED=1
 HISTSIZE=100000
 SAVEHIST=100000
 
@@ -69,14 +71,6 @@ _after-first-word() {
 }
 zle -N _after-first-word
 bindkey '^x^a' _after-first-word
-
-# Bind history to up down keys
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey '^[[A' up-line-or-beginning-search
-bindkey '^[[B' down-line-or-beginning-search
 
 # Do history expansion on space
 bindkey ' ' magic-space
