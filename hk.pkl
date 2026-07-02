@@ -1,5 +1,5 @@
-amends "package://github.com/jdx/hk/releases/download/v1.39.0/hk@1.39.0#/Config.pkl"
-import "package://github.com/jdx/hk/releases/download/v1.39.0/hk@1.39.0#/Builtins.pkl"
+amends "package://github.com/jdx/hk/releases/download/v1.49.0/hk@1.49.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.49.0/hk@1.49.0#/Builtins.pkl"
 
 local linters = new Mapping<String, Step> {
   ["newlines"] = Builtins.newlines
@@ -10,8 +10,16 @@ local linters = new Mapping<String, Step> {
     types = List("shell")
   }
   ["shfmt"] = (Builtins.shfmt) {
-    // Must exclude bin/2date, which is a Ruby script
-    glob = List("bin/[!2]*", "zsh/functions/*", "**/*.zsh", ".zprofile", ".zshenv", ".zshrc")
+    glob =
+      List(
+        "bin/[!2]*", // Must exclude bin/2date, which is a Ruby script
+        "*.zfunctions/*",
+        "*.zshrc.d/*",
+        "*.zprofile",
+        "*.zshenv",
+        "*.zshrc",
+        "*.zstyles",
+      )
   }
   ["trailing-whitespace"] = Builtins.trailing_whitespace
 }
@@ -19,11 +27,10 @@ local linters = new Mapping<String, Step> {
 hooks {
   ["pre-commit"] {
     fix = true
-    stash = false // Required to make the shfmt linter work for now - https://github.com/jdx/hk/discussions/790
+    stash = true
     steps = linters
   }
   ["fix"] {
-    fix = true
     steps = linters
   }
   ["check"] {
