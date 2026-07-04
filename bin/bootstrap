@@ -26,8 +26,8 @@ brew update
 # Install global homebrew packages from Brewfile
 brew bundle --global
 
-# Find installers and run them iteratively
-find ./install -iname "*.sh" | while read -r installer; do sh -c "${installer}"; done
+# Install tools managed via mise
+mise install
 
 # Set up macOS
 sudo ./bin/macos
