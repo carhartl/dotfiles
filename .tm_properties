@@ -1,28 +1,7 @@
-fontName = "Menlo";
-fontSize = 15
-showInvisibles = true
-spellChecking = true
-showWrapColumn = true
-
-include = "{$include,.gitignore,.dockerignore,.env,.env.example}"
-
-[ text ]
-softWrap   = false
-wrapColumn = 100
-softTabs   = true
-tabSize    = 2
-
-[ text.plain ]
-softWrap   = true
-wrapColumn = "Use Window Frame"
-softTabs   = false
-tabSize    = 4
-
-[ source ]
-softWrap   = false
-wrapColumn = 100
-softTabs   = true
-tabSize    = 2
-
-[ Procfile ]
-fileType = source.yaml
+fontName       = "Menlo";
+fontSize       = 15
+softTabs       = true
+softWrap       = true
+spellChecking  = true
+tabSize        = 4
+wrapColumn     = "Use Window Frame"
