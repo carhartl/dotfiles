@@ -27,7 +27,7 @@ export EDITOR=zed
 export PROJECTS="$HOME/Workspace"
 
 # Better ripgrep config
-export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU path fpath
