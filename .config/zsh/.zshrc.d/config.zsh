@@ -14,8 +14,15 @@ SAVEHIST=100000
 setopt AUTO_CD
 
 # Completion
-setopt COMPLETE_IN_WORD
-setopt NO_LIST_BEEP
+setopt ALWAYS_TO_END    # Move cursor to the end of a completed word
+setopt AUTO_LIST        # Automatically list choices on ambiguous completion
+setopt AUTO_MENU        # Show completion menu on a successive tab press
+setopt AUTO_PARAM_SLASH # If completed parameter is a directory, add a trailing slash
+setopt COMPLETE_IN_WORD # Complete from both ends of a word
+setopt NO_FLOW_CONTROL  # Disable start/stop characters in shell editor
+setopt NO_MENU_COMPLETE # Do not autoselect the first completion entry
+setopt NO_LIST_BEEP     # Do not beep for ambiguous completions
+setopt PATH_DIRS        # Perform path search even on command names with slashes
 
 # History
 setopt APPEND_HISTORY
