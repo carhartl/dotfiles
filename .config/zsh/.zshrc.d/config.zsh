@@ -2,6 +2,7 @@
 
 CORRECT_IGNORE_FILE='.*'
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HISTORY_IGNORE="(ls|l|pwd|exit|clear|history|top|htop|rm|cp|mv|less|more|vim|zed|which|man|df|du|free|ps|kill|hh)"
 HISTORY_SUBSTRING_SEARCH_FUZZY=1
 HISTORY_SUBSTRING_SEARCH_PREFIXED=1
 HISTSIZE=100000
