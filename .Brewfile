@@ -1,4 +1,5 @@
 brew "antidote"
+brew "bat"
 tap "carhartl/tap"
 brew "carhartl/tap/git-commit-template"
 brew "carhartl/tap/git-wip"

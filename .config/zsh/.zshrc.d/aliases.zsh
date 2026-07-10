@@ -15,6 +15,7 @@ alias rehist="fc -RI"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias ws="cd ~/Workspace"
+alias f=fzf
 alias e='${(z)VISUAL:-${(z)EDITOR}} ${1:-.}'
 alias o="open"
 alias oo="open ."
@@ -25,6 +26,8 @@ alias backtunes="rsync -av --delete /Volumes/Musik/Music /Volumes/Backup"
 alias x="chmod +x $(ls -tr | tail -1)"
 alias jq=jaq
 alias now=iso8601
+alias work="git branch --sort=-committerdate | fzf | xargs git switch"
+alias fzedf="fzf --print0 | xargs -0 -o zed"
 
 # Serve files from current directory
 alias serve="python -m http.server"
