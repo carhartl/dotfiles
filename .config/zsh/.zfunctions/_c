@@ -1,4 +1,2 @@
 #compdef c
-_files -W $PROJECTS -/
-
-# See further documentation in `zsh/functions/c`.
+_path_files -W "$PROJECTS" -/
