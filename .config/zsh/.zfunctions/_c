@@ -1,2 +1,3 @@
 #compdef c
+
 _path_files -W "$PROJECTS" -/
