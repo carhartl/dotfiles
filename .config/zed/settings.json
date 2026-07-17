@@ -17,6 +17,8 @@
     },
     "default_profile": "ask",
     "dock": "left",
+    "expand_edit_card": false,
+    "expand_terminal_card": false,
     "inline_assistant_model": {
       "model": "claude-3-7-sonnet-latest",
       "provider": "zed.dev"
@@ -69,6 +71,12 @@
     "dock": "left"
   },
   "colorize_brackets": true,
+  "default_open_behavior": "new_window",
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
   "edit_predictions": {
     "mode": "subtle",
     "provider": "copilot"
@@ -76,6 +84,10 @@
   "file_types": {
     "Dockerfile": ["Dockerfile*"]
   },
+  "focus_follows_mouse": {
+    "enabled": true
+  },
+  "format_on_save": "on",
   "git": {
     "blame": {
       "show_avatar": true
@@ -367,6 +379,9 @@
     "dock": "left"
   },
   "preferred_line_length": 120,
+  "prettier": {
+    "allowed": true
+  },
   "project_panel": {
     "default_width": 450,
     "diagnostic_badges": true,
@@ -376,12 +391,18 @@
     "sticky_scroll": true
   },
   "rounded_selection": false,
+  "session": {
+    "trust_all_worktrees": true
+  },
   "scrollbar": {
     "show": "system"
   },
   "scroll_beyond_last_line": "vertical_scroll_margin",
   "show_whitespaces": "boundary",
   "soft_wrap": "editor_width",
+  "status_bar": {
+    "show_active_file": true
+  },
   "sticky_scroll": {
     "enabled": true
   },
@@ -393,11 +414,7 @@
     "copy_on_select": true,
     "default_height": 500
   },
-  "theme": {
-    "dark": "Hyper",
-    "light": "GitHub Light",
-    "mode": "dark"
-  },
+  "theme": "Ayu Light",
   "theme_overrides": {
     "Github Light": {
       "syntax": {
