@@ -41,6 +41,7 @@ brew "kube-score"
 brew "kubeconform"
 brew "kubectx"
 brew "kubespy"
+brew "lazygit"
 brew "mdp"
 brew "mise"
 brew "moreutils" # https://joeyh.name/code/moreutils/
