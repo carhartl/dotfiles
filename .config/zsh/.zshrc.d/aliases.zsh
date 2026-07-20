@@ -10,7 +10,7 @@ alias ~="cd ~"
 alias -- -="cd -"
 
 # Shortcuts
-alias reload!=". ${ZDOTDIR:-$HOME}/.zshrc"
+alias reload!=". $HOME/.zshenv; . ${ZDOTDIR:-$HOME}/.zshrc"
 alias rehist="fc -RI"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
