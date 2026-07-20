@@ -8,8 +8,8 @@ ZFUNCDIR=${ZDOTDIR:-$HOME}/.zfunctions
 fpath=($ZFUNCDIR $fpath)
 autoload -Uz $ZFUNCDIR/*(.:t)
 
-# Set any zstyles you might use for configuration.
-[[ ! -f ${ZDOTDIR:-$HOME}/.zstyles ]] || source ${ZDOTDIR:-$HOME}/.zstyles
+# Load zstyles used for configuration.
+source ${ZDOTDIR:-$HOME}/.zstyles
 
 # Load antidote plugins.
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
@@ -64,9 +64,9 @@ autoload colors && colors
 # Setup prompt
 autoload -Uz promptinit && promptinit && prompt pure
 
-zsh-defer source /opt/homebrew/etc/profile.d/z.sh
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+zsh-defer source /opt/homebrew/etc/profile.d/z.sh
 zsh-defer eval "$(fzf --zsh)"
 zsh-defer eval "$(mise activate zsh)"
 zsh-defer -c '[ -f ~/.config/op/plugins.sh ] && source ~/.config/op/plugins.sh'
