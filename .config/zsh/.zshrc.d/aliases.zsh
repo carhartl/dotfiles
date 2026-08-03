@@ -42,7 +42,7 @@ alias history-stat='history 0 | awk "{print $2}" | sort | uniq -c | sort -n -r |
 alias l="ls -1A"
 
 # Update all the things
-alias update-homebrew="brew update; brew upgrade"
+alias update-homebrew="brew update; brew upgrade --no-ask"
 alias update-mise="mise up; mise plugins up"
 alias update-antidote="antidote update"
 alias update-go="gup update"
