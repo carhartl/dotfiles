@@ -5,7 +5,7 @@
 
 # Lazy-load (autoload) Zsh function files from a directory.
 ZFUNCDIR=${ZDOTDIR:-$HOME}/.zfunctions
-fpath=($ZFUNCDIR $fpath)
+fpath=($ZFUNCDIR $HOME/.docker/completions $fpath)
 autoload -Uz $ZFUNCDIR/*(.:t)
 
 # Load zstyles used for configuration.
