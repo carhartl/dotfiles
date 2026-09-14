@@ -1,39 +1,28 @@
-amends "package://github.com/jdx/hk/releases/download/v1.49.0/hk@1.49.0#/Config.pkl"
-import "package://github.com/jdx/hk/releases/download/v1.49.0/hk@1.49.0#/Builtins.pkl"
+import "package://github.com/jdx/hk/releases/download/v2.0.0/hk@2.0.0#/Builtins.pkl"
+import "package://github.com/jdx/hk/releases/download/v2.0.0/hk@2.0.0#/Config.pkl"
 
-local linters = new Mapping<String, Step> {
+steps {
   ["newlines"] = Builtins.newlines
   ["pkl"] = Builtins.pkl
   ["pkl-format"] = Builtins.pkl_format
   ["prettier"] = Builtins.prettier
-  ["shellcheck"] = (Builtins.shellcheck) {
-    types = List("shell")
-  }
+  ["shellcheck"] = Builtins.shellcheck
   ["shfmt"] = (Builtins.shfmt) {
-    glob =
-      List(
-        "bin/[!2]*", // Must exclude bin/2date, which is a Ruby script
-        "*.zfunctions/*",
-        "*.zshrc.d/*",
-        "*.zprofile",
-        "*.zshenv",
-        "*.zshrc",
-        "*.zstyles",
-      )
+    match_any =
+      List(new Config.FileSelector {
+        glob =
+          List(
+            "bin/*",
+            "*.zfunctions/*",
+            "*.zshrc.d/*",
+            "*.zprofile",
+            "*.zshenv",
+            "*.zshrc",
+            "*.zstyles",
+          )
+      })
+    // Must exclude bin/2date, which is a Ruby script
+    exclude = List("bin/2date")
   }
   ["trailing-whitespace"] = Builtins.trailing_whitespace
-}
-
-hooks {
-  ["pre-commit"] {
-    fix = true
-    stash = true
-    steps = linters
-  }
-  ["fix"] {
-    steps = linters
-  }
-  ["check"] {
-    steps = linters
-  }
 }
