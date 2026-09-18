@@ -104,6 +104,16 @@
     "enabled": true
   },
   "languages": {
+    "CSS": {
+      "prettier": {
+        "allowed": true
+      }
+    },
+    "HTML": {
+      "prettier": {
+        "allowed": true
+      }
+    },
     "Java": {
       "code_actions_on_format": {
         "quickfix": true,
@@ -126,6 +136,11 @@
         }
       ]
     },
+    "JSON": {
+      "prettier": {
+        "allowed": true
+      }
+    },
     // Workaround for https://github.com/prettier/prettier/issues/15956
     "JSONC": {
       "formatter": [
@@ -143,7 +158,10 @@
       ]
     },
     "Markdown": {
-      "format_on_save": "on"
+      "prettier": {
+        "allowed": true
+      },
+      "remove_trailing_whitespace_on_save": true
     },
     "Python": {
       "code_actions_on_format": {
@@ -380,7 +398,7 @@
   },
   "preferred_line_length": 120,
   "prettier": {
-    "allowed": true
+    "allowed": false
   },
   "project_panel": {
     "default_width": 450,
