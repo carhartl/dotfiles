@@ -25,6 +25,10 @@ tmtags
 !.vscode/extensions.json
 *.code-workspace
 
+# Agentic development
+AGENTS.local.md
+.worktrees/
+
 *.orig
 
 *lefthook-local.y*ml
