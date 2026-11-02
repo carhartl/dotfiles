@@ -2,7 +2,11 @@
   "lastChangelogVersion": "1.4.0",
   "deviceId": "5977a994-5962-47a4-af8b-6dcc589e55de",
   "packages": [
-    "npm:pi-gpt"
+    "npm:@dietrichgebert/ponytail@5.3.2",
+    "npm:pi-btw@0.8.0",
+    "npm:pi-gpt",
+    "npm:pi-subagents@0.83.0",
+    "npm:pi-web-access@0.45.0"
   ],
   "theme": "hyper",
   "hideThinkingBlock": true,
