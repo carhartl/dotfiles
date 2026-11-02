@@ -4,5 +4,5 @@ function pet-select() {
 	zle redisplay
 }
 zle -N pet-select
-stty -ixon
+[[ -t 0 ]] && stty -ixon
 bindkey '^s' pet-select
