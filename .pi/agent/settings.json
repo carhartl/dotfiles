@@ -1,0 +1,11 @@
+{
+  "lastChangelogVersion": "1.4.0",
+  "deviceId": "5977a994-5962-47a4-af8b-6dcc589e55de",
+  "packages": [
+    "npm:pi-gpt"
+  ],
+  "theme": "hyper",
+  "hideThinkingBlock": true,
+  "defaultProvider": "github-copilot",
+  "defaultModel": "gpt-6.1-sol"
+}
