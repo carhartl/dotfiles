@@ -4,3 +4,6 @@
 [submodule ".vim/pack/plugins/start/vim-grammarous"]
 	path = .vim/pack/plugins/start/vim-grammarous
 	url = https://github.com/rhysd/vim-grammarous
+[submodule ".pi/agent/skills/agent-skills"]
+	path = .pi/agent/skills/agent-skills
+	url = https://github.com/addyosmani/agent-skills.git
