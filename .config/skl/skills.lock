@@ -6,11 +6,6 @@ version = 3
 source = "danyuchn/asd-ste100-skill"
 commit = "833810d3866645f579085aa76803541892bde692"
 
-[skills.caveman-commit]
-source = "juliusbrussee/caveman"
-commit = "2e068f735253cce28256744804785f01887d9646"
-subdir = "skills/caveman-commit"
-
 [skills.cleanup]
 source = "mkanat/skills"
 commit = "1e5ae48567adb6c22e1039ce52884b33c18ca96a"
