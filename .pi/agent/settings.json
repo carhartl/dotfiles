@@ -5,6 +5,7 @@
     "npm:@dietrichgebert/ponytail@5.3.2",
     "npm:pi-btw@0.8.0",
     "npm:pi-gpt",
+    "npm:pi-memory@0.4.2",
     "npm:pi-subagents@0.83.0",
     "npm:pi-web-access@0.45.0"
   ],
