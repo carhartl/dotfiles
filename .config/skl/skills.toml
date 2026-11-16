@@ -6,4 +6,5 @@ asd-ste100 = { source = "danyuchn/asd-ste100-skill", subdir = "." }
 cleanup = { source = "mkanat/skills", subdir = "skills/cleanup" }
 find-skills = { source = "vercel-labs/skills", subdir = "skills/find-skills" }
 gh-stack = { source = "github/gh-stack", subdir = "skills/gh-stack" }
+harness-retro = { source = "alfonsograziano/skills", subdir = "skills/harness-retro" }
 talking-to-humans = { source = "mattwynne/skills", subdir = "skills/talking-to-humans" }

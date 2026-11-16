@@ -21,6 +21,11 @@ source = "github/gh-stack"
 commit = "2a49e6751238633db504655d8a8eba3e433e827d"
 subdir = "skills/gh-stack"
 
+[skills.harness-retro]
+source = "alfonsograziano/skills"
+commit = "5acc96696e415e0bd6a2682b7fa76874b009d2af"
+subdir = "skills/harness-retro"
+
 [skills.talking-to-humans]
 source = "mattwynne/skills"
 commit = "349634cce915936f08fffaaace9b77eb37940e43"
