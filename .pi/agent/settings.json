@@ -9,7 +9,9 @@
     "npm:pi-web-access@0.45.0"
   ],
   "theme": "hyper",
-  "hideThinkingBlock": true,
+  "hideThinkingBlock": false,
+  "collapseChangelog": true,
+  "showHardwareCursor": true,
   "defaultProvider": "github-copilot",
   "defaultModel": "gpt-6.1-sol"
 }
