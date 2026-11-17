@@ -7,6 +7,6 @@
 # Git worktrees
 
 - Ask before creating a worktree.
-- Create worktrees in the main checkout's .worktrees directory, not inside another worktree; Git is configured to ignore this directory.
+- Create worktrees in the main checkout's .worktrees directory, never inside another worktree; Git is configured to ignore this directory.
 - Never remove a worktree with uncommitted changes.
 - Use .worktrees/<branch-name> as the worktree path, preserving slashes. If no branch name was specified, ask.
