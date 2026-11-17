@@ -6,6 +6,7 @@
     "npm:pi-btw@0.8.0",
     "npm:pi-gpt",
     "npm:pi-memory@0.4.2",
+    "npm:pi-notify@1.5.0",
     "npm:pi-subagents@0.83.0",
     "npm:pi-watch@0.1.0",
     "npm:pi-web-access@0.45.0"
