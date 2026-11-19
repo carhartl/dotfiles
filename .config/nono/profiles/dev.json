@@ -1,0 +1,34 @@
+{
+  "extends": ["mise-dev", "nolabs-ai/pi"],
+  "meta": {
+    "name": "dev"
+  },
+  "groups": {
+    "include": []
+  },
+  "workdir": {
+    "access": "readwrite"
+  },
+  "filesystem": {
+    "allow": ["$HOME/.local/state/mise", "$HOME/.config/pi/web-search-cache"],
+    "read": ["$HOME/.agents", "$HOME/.local/share/skl/store", "$HOME/bin"],
+    "read_file": ["$HOME/.gitconfig.local", "$HOME/.config/ripgrep/config"],
+    "unix_socket": ["$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"],
+    "bypass_protection": ["$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"]
+  },
+  "network": {
+    "block": false,
+    "network_profile": null,
+    "credentials": ["github"],
+    "custom_credentials": {
+      "github": {
+        "upstream": "https://api.github.com",
+        "credential_key": "op://Employee/GitHub Personal Access Token/token",
+        "env_var": "GH_TOKEN",
+        "phantom_format": "ghp_{}",
+        "inject_header": "Authorization",
+        "credential_format": "Bearer {}"
+      }
+    }
+  }
+}
