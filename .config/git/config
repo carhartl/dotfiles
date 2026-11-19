@@ -41,6 +41,8 @@
 	stashes = stash list
 [branch]
 	sort = -committerdate
+[checkout]
+	defaultRemote = origin
 [color]
 	ui = auto
 [commit]
@@ -51,7 +53,8 @@
 	precomposeUnicode = true
 [diff]
 	algorithm = histogram
-	colorMoved = plain
+	colorMoved = default
+	colorMovedWS = allow-indentation-change
 	compactionHeuristic = true
 	mnemonicPrefix = true
 	renames = true
@@ -88,10 +91,11 @@
 	autoStash = true
 	updateRefs = true
 [rerere]
-	autoupdate = true
+	autoUpdate = true
 	enabled = true
 [tag]
 	gpgSign = true
+	sort = -v:refname
 [user]
 	name = Klaus Hartl
 	useConfigOnly = true
