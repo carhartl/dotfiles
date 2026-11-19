@@ -1,7 +1,7 @@
 # Development environment
 
 - Use mise-managed tools. Run `mise config ls` and `mise ls --current` in the working directory to identify applicable configuration and tool versions, including environment overrides.
-- Prefer existing mise tasks; otherwise use `mise exec -- <command>` to run configured tools.
+- Prefer existing mise tasks. Use `mise exec -- <command>` for tools managed by the applicable mise configuration. Run other installed tools directly.
 - Do not install or upgrade tools globally without asking.
 
 # Git worktrees
