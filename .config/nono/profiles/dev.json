@@ -23,7 +23,7 @@
     "custom_credentials": {
       "github": {
         "upstream": "https://api.github.com",
-        "credential_key": "op://Employee/GitHub Personal Access Token/token",
+        "credential_key": "op://Personal/GitHub Personal Access Token/token",
         "env_var": "GH_TOKEN",
         "phantom_format": "ghp_{}",
         "inject_header": "Authorization",
