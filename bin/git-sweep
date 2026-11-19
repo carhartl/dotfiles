@@ -1,20 +1,46 @@
 #!/usr/bin/env bash
 
+# Colors only when writing to a terminal
+if [ -t 1 ]; then
+	yellow=$'\e[33m' green=$'\e[32m' reset=$'\e[0m'
+fi
+
 # This must be run from default branch
 defaultbranch="$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')"
-git checkout "${defaultbranch}"
+# Stop if this fails, otherwise we could remove the worktree we are standing in
+git checkout "${defaultbranch}" || exit 1
 # Update our list of remotes
 git fetch
 git remote prune origin
-# Remove local fully merged branches
-git branch --merged "${defaultbranch}" | grep -v "${defaultbranch}$" | xargs git branch -d
-# Show remote fully merged branches
-echo "The following remote branches are fully merged and will be removed:"
-git branch -r --merged "${defaultbranch}" | sed 's/ *origin\///' | grep -v "${defaultbranch}$"
-read -p "Continue (y/n)? "
+# Remove local fully merged branches, and their worktrees.
+# git refuses to remove a worktree with uncommitted changes; that branch is then kept.
+git for-each-ref --merged "${defaultbranch}" --format='%(refname:short)%1f%(upstream:short)%1f%(worktreepath)' refs/heads |
+	# Separator must not be whitespace, or read would collapse empty fields
+	while IFS=$'\x1f' read -r branch upstream path; do
+		[ "${branch}" = "${defaultbranch}" ] && continue
+		# Keep branches just created to start work: never committed on (one reflog entry)
+		# and not a checkout of a remote branch of the same name
+		if [ "${upstream}" != "origin/${branch}" ] && [ "$(git reflog show "${branch}" -- | wc -l)" -eq 1 ]; then
+			echo "${yellow}Keeping new branch ${branch}${reset}"
+			continue
+		fi
+		if [ -n "${path}" ]; then
+			git worktree remove "${path}" || continue
+		fi
+		git branch -d "${branch}"
+	done
+# Remote fully merged branches, except those whose local branch was kept
+remotebranches="$(git branch -r --merged "${defaultbranch}" | sed 's/ *origin\///' | grep -v "${defaultbranch}$" |
+	grep -vxFf <(git for-each-ref --format='%(refname:short)' refs/heads))"
+if [ -z "${remotebranches}" ]; then
+	echo "${green}Everything is tidy.${reset}"
+	exit
+fi
+echo "${yellow}The following remote branches are fully merged and will be removed:${reset}"
+echo "${remotebranches}"
+read -p "${yellow}Continue (y/n)?${reset} "
 if [ "$REPLY" == "y" ]; then
 	# Remove remote fully merged branches
-	git branch -r --merged "${defaultbranch}" | sed 's/ *origin\///' |
-		grep -v "${defaultbranch}$" | xargs -I% git push origin :%
-	echo "Done!"
+	echo "${remotebranches}" | xargs -I% git push origin :%
+	echo "${green}Done!${reset}"
 fi
