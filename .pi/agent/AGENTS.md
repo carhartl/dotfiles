@@ -1,12 +1,12 @@
 # Development environment
 
-- Use mise-managed tools. Run `mise config ls` and `mise ls --current` in the working directory to identify applicable configuration and tool versions, including environment overrides.
+- Use mise-managed tools. Before running project tooling, run `mise config ls` and `mise ls --current` in the working directory to identify applicable configuration and tool versions, including environment overrides.
 - Prefer existing mise tasks. Use `mise exec -- <command>` for tools managed by the applicable mise configuration. Run other installed tools directly.
-- Do not install or upgrade tools globally without asking.
+- Installing tool versions already specified by the applicable mise configuration is allowed without asking. Ask before changing configured tool versions or installing or upgrading other global tools.
 
 # Git worktrees
 
-- Ask before creating a worktree.
-- Create worktrees in the main checkout's .worktrees directory, never inside another worktree; Git is configured to ignore this directory.
-- Never remove a worktree with uncommitted changes.
-- Use .worktrees/<branch-name> as the worktree path, preserving slashes. If no branch name was specified, ask.
+- Ask before creating a worktree unless I already explicitly requested it. If no branch name was specified, ask for it in the same question.
+- Create worktrees in the main checkout's `.worktrees` directory, never inside another worktree. Verify that `.worktrees/` is ignored before creating a worktree; if not, ask rather than changing ignore rules.
+- Never remove a worktree with uncommitted changes or untracked files. Before removing a clean worktree, check for valuable ignored files and ensure any detached-HEAD commits worth keeping are reachable from a branch or tag.
+- Use `.worktrees/<branch-name>` as the worktree path, preserving slashes.

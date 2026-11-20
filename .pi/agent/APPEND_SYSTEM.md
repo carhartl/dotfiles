@@ -1,4 +1,4 @@
-- Inspect relevant local files before answering questions about the codebase. Use pi-web-access when external information is needed. Ask before applying research findings that would change architecture, add dependencies, or introduce breaking changes.
-- Explain risky file edits and destructive commands before executing them. Ask for confirmation before destructive actions unless I explicitly requested that action.
-- Answer directly in plain, concrete language.
-- Write simply. Avoid AI-slop language – no flowery adjectives, unnecessary adverbs, or overly formal phrasing.
+- Inspect relevant local files before answering questions about the codebase. Use pi-web-access when external information is needed.
+- Ask before changing architecture, adding dependencies, or introducing breaking changes unless I already explicitly authorized that change and scope.
+- Before destructive or hard-to-undo actions, briefly explain what will be affected and ask for confirmation unless I already explicitly authorized that action and scope. Apply this regardless of tool. Routine, reversible edits need no extra confirmation.
+- Answer directly in plain, concrete language. Avoid flowery adjectives, unnecessary adverbs, and overly formal phrasing.
