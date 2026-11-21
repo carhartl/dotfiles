@@ -2,7 +2,7 @@
 dots() {
 	cd "$HOME" || exit
 	if [[ $# > 0 ]]; then
-		git -c submodule.recurse=true --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" "$@"
+		git -c submodule.recurse=true -c push.recurseSubmodules=no --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" "$@"
 	else
 		git --git-dir="$HOME/.dotfiles.git/" --work-tree="$HOME" status --short --branch
 	fi
