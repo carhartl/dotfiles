@@ -27,7 +27,18 @@
         "env_var": "GH_TOKEN",
         "phantom_format": "ghp_{}",
         "inject_header": "Authorization",
-        "credential_format": "Bearer {}"
+        "credential_format": "Bearer {}",
+        "endpoint_rules": [
+          { "method": "*", "path": "/repos/**" },
+          { "method": "*", "path": "/orgs/**" },
+          { "method": "*", "path": "/user" },
+          { "method": "*", "path": "/user/**" },
+          { "method": "GET", "path": "/users/**" },
+          { "method": "GET", "path": "/search/**" },
+          { "method": "GET", "path": "/rate_limit" },
+          { "method": "POST", "path": "/graphql" },
+          { "method": "*", "path": "/gists/**" }
+        ]
       }
     }
   }
