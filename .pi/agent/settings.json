@@ -16,5 +16,6 @@
   "collapseChangelog": true,
   "showHardwareCursor": true,
   "defaultProvider": "github-copilot",
-  "defaultModel": "gpt-6.1-sol"
+  "defaultModel": "gpt-6.1-sol",
+  "enabledModels": ["claude-code/*", "github-copilot/*", "openai-codex/*"]
 }
