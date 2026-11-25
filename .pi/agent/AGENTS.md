@@ -10,3 +10,11 @@
 - Create worktrees in the main checkout's `.worktrees` directory, never inside another worktree. Verify that `.worktrees/` is ignored before creating a worktree; if not, ask rather than changing ignore rules.
 - Never remove a worktree with uncommitted changes or untracked files. Before removing a clean worktree, check for valuable ignored files and ensure any detached-HEAD commits worth keeping are reachable from a branch or tag.
 - Use `.worktrees/<branch-name>` as the worktree path, preserving slashes.
+
+# Writing code
+
+- Never add comments that restate what the code does. Comment only to explain why the code is written that way, or to give context the code cannot show. Documentation comments on public APIs are fine where the project expects them.
+- Never add comments that describe the change, the task or the conversation. That belongs in the commit message.
+- Do not remove or rewrite existing comments unless your change makes them wrong.
+- On an interface, trait, abstract type or header, document only the contract that every implementation must honour. Put details and assumptions specific to one implementation on that implementation.
+- Do not extract a helper method that is called only once; inline it.
