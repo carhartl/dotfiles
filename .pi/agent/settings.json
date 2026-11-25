@@ -13,6 +13,8 @@
   ],
   "theme": "hyper",
   "hideThinkingBlock": false,
+  "steeringMode": "all",
+  "followUpMode": "all",
   "collapseChangelog": true,
   "showHardwareCursor": true,
   "defaultProvider": "github-copilot",
